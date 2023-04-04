@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ">
+  <uml:Model xmi:id="_VhCsAM8GEe2gsuU1Suf6lg" name="State">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_VjQSgM8GEe2gsuU1Suf6lg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_Vh0IEM8GEe2gsuU1Suf6lg" name="StateMachineAplicatieProgramareSedinte">
+      <region xmi:type="uml:Region" xmi:id="_Vh_uQM8GEe2gsuU1Suf6lg" name="Region1">
+        <transition xmi:type="uml:Transition" xmi:id="_m4x2QM86Ee2aFostj4OUlg" source="_ckos8M86Ee2aFostj4OUlg" target="_e3_2sM86Ee2aFostj4OUlg"/>
+        <transition xmi:type="uml:Transition" xmi:id="_z3cFEM86Ee2aFostj4OUlg" name="Apasare buton Login" guard="_668kEM86Ee2aFostj4OUlg" source="_e3_2sM86Ee2aFostj4OUlg" target="_qcz9sM86Ee2aFostj4OUlg">
+          <ownedRule xmi:type="uml:Constraint" xmi:id="_668kEM86Ee2aFostj4OUlg" name="date angajat corecte"/>
+          <effect xmi:type="uml:Activity" xmi:id="_FKRe0M87Ee2aFostj4OUlg" name="conectare la aplicatie in meniul principal"/>
+        </transition>
+        <transition xmi:type="uml:Transition" xmi:id="_XmmQMM87Ee2aFostj4OUlg" name="Accesare meniu verificare sedinte" source="_qcz9sM86Ee2aFostj4OUlg" target="_M79ScM87Ee2aFostj4OUlg"/>
+        <transition xmi:type="uml:Transition" xmi:id="_dKXawM87Ee2aFostj4OUlg" name="Apasare buton accept sau refuz sedinta" source="_M79ScM87Ee2aFostj4OUlg" target="_qcz9sM86Ee2aFostj4OUlg">
+          <effect xmi:type="uml:Activity" xmi:id="_rBVxoM87Ee2aFostj4OUlg" name="Afisare update"/>
+        </transition>
+        <transition xmi:type="uml:Transition" xmi:id="_zJ2w4M87Ee2aFostj4OUlg" name="Accesare vizualizare cont" guard="_5lySgM87Ee2aFostj4OUlg" source="_qcz9sM86Ee2aFostj4OUlg" target="_uyIisM87Ee2aFostj4OUlg">
+          <ownedRule xmi:type="uml:Constraint" xmi:id="_5lySgM87Ee2aFostj4OUlg" name="logged in"/>
+        </transition>
+        <transition xmi:type="uml:Transition" xmi:id="_Ccf0gM88Ee2aFostj4OUlg" name="Inapoi" source="_uyIisM87Ee2aFostj4OUlg" target="_qcz9sM86Ee2aFostj4OUlg"/>
+        <transition xmi:type="uml:Transition" xmi:id="_VPxGQM88Ee2aFostj4OUlg" source="_uyIisM87Ee2aFostj4OUlg" target="_Q8NmYM88Ee2aFostj4OUlg"/>
+        <transition xmi:type="uml:Transition" xmi:id="_eug4oM88Ee2aFostj4OUlg" name="Relogare" guard="_vL7GQM88Ee2aFostj4OUlg" source="_Q8NmYM88Ee2aFostj4OUlg" target="_e3_2sM86Ee2aFostj4OUlg">
+          <ownedRule xmi:type="uml:Constraint" xmi:id="_vL7GQM88Ee2aFostj4OUlg" name="efectuare completa schimbare parola"/>
+        </transition>
+        <transition xmi:type="uml:Transition" xmi:id="_BC9j0M8-Ee2aFostj4OUlg" name="Angajat nou in organizatie" guard="_Pw7NEM8-Ee2aFostj4OUlg" source="_qcz9sM86Ee2aFostj4OUlg" target="__JObAM89Ee2aFostj4OUlg">
+          <ownedRule xmi:type="uml:Constraint" xmi:id="_Pw7NEM8-Ee2aFostj4OUlg" name="Angajatul care opereaza este Manager"/>
+        </transition>
+        <transition xmi:type="uml:Transition" xmi:id="_akfdUM8-Ee2aFostj4OUlg" name="Angajat nou introdus" guard="_iw0lkM8-Ee2aFostj4OUlg" source="__JObAM89Ee2aFostj4OUlg" target="_qcz9sM86Ee2aFostj4OUlg">
+          <ownedRule xmi:type="uml:Constraint" xmi:id="_iw0lkM8-Ee2aFostj4OUlg" name="contul este creat"/>
+        </transition>
+        <transition xmi:type="uml:Transition" xmi:id="_CT6_8M8_Ee2aFostj4OUlg" name="Cerere noua sedinta" guard="_LN4qQM8_Ee2aFostj4OUlg" source="_qcz9sM86Ee2aFostj4OUlg" target="_17LhoM8-Ee2aFostj4OUlg">
+          <ownedRule xmi:type="uml:Constraint" xmi:id="_LN4qQM8_Ee2aFostj4OUlg" name="Angajatul care opereaza este Manager"/>
+        </transition>
+        <transition xmi:type="uml:Transition" xmi:id="_cAQbQM8_Ee2aFostj4OUlg" name="Sedinta creata" guard="_j_HvQM8_Ee2aFostj4OUlg" source="_17LhoM8-Ee2aFostj4OUlg" target="_qcz9sM86Ee2aFostj4OUlg">
+          <ownedRule xmi:type="uml:Constraint" xmi:id="_j_HvQM8_Ee2aFostj4OUlg" name="toate detaliile sedintei sunt valide"/>
+          <effect xmi:type="uml:Activity" xmi:id="_vvOgQM8_Ee2aFostj4OUlg" name="Trimitere notificare catre angajati"/>
+        </transition>
+        <transition xmi:type="uml:Transition" xmi:id="_F6NUsM9AEe2aFostj4OUlg" name="Logout" source="_qcz9sM86Ee2aFostj4OUlg" target="_BPeq8M9AEe2aFostj4OUlg">
+          <effect xmi:type="uml:Activity" xmi:id="_OkUlIM9AEe2aFostj4OUlg" name="Uitare detalii personale angajat"/>
+        </transition>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_ckos8M86Ee2aFostj4OUlg" name="Meniu Login in aplicatie"/>
+        <subvertex xmi:type="uml:State" xmi:id="_e3_2sM86Ee2aFostj4OUlg" name="Introducere date angajat"/>
+        <subvertex xmi:type="uml:State" xmi:id="_qcz9sM86Ee2aFostj4OUlg" name="Afisare meniu &amp; notificari"/>
+        <subvertex xmi:type="uml:State" xmi:id="_M79ScM87Ee2aFostj4OUlg" name="Afisare Lista Sedinte">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_PsuJ4M87Ee2aFostj4OUlg">
+            <body>Afisare lista sedinte</body>
+          </ownedComment>
+        </subvertex>
+        <subvertex xmi:type="uml:State" xmi:id="_uyIisM87Ee2aFostj4OUlg" name="Informatii cont"/>
+        <subvertex xmi:type="uml:State" xmi:id="_Q8NmYM88Ee2aFostj4OUlg" name="Schimbare parola">
+          <doActivity xmi:type="uml:Activity" xmi:id="_UJ0K0M88Ee2aFostj4OUlg" name="Introducere parola noua"/>
+        </subvertex>
+        <subvertex xmi:type="uml:State" xmi:id="__JObAM89Ee2aFostj4OUlg" name="Inregistrare angajat nou">
+          <doActivity xmi:type="uml:Activity" xmi:id="_YJEjwM8-Ee2aFostj4OUlg" name="Introducere date personale angajat nou"/>
+        </subvertex>
+        <subvertex xmi:type="uml:State" xmi:id="_17LhoM8-Ee2aFostj4OUlg" name="Creare sedinta">
+          <doActivity xmi:type="uml:Activity" xmi:id="_5fv0kM8-Ee2aFostj4OUlg" name="Intoducere detalii sedinta"/>
+        </subvertex>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_BPeq8M9AEe2aFostj4OUlg" name="Meniu Login in aplicatie"/>
+      </region>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Ps9acM87Ee2aFostj4OUlg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PtAdwM87Ee2aFostj4OUlg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <ActionLanguage:TextualRepresentation xmi:id="_PtDhEM87Ee2aFostj4OUlg" base_Comment="_PsuJ4M87Ee2aFostj4OUlg" language="org.eclipse.papyrus.uml.textedit.state.xtext.UmlState"/>
+</xmi:XMI>

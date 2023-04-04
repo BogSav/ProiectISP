@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:Codegen="http://www.eclipse.org/papyrus/Codegen/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_Tl8VwMsrEe2COtMR7zNjHg" name="model">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_TmNbgMsrEe2COtMR7zNjHg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_79Ke4MswEe2COtMR7zNjHg" name="Angajat">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Eic5sMsxEe2COtMR7zNjHg" name="isManager" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_LkHloMsxEe2COtMR7zNjHg" name="nume" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_MxWNwMsxEe2COtMR7zNjHg" name="prenume" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_OkBsUMsxEe2COtMR7zNjHg" name="username" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_QNrKsMsxEe2COtMR7zNjHg" name="parola" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="__lf3gMswEe2COtMR7zNjHg" name="isManager"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_frim4MsxEe2COtMR7zNjHg" name="Meniu">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_mz_lYMszEe2COtMR7zNjHg" name="angajatLogat" type="_79Ke4MswEe2COtMR7zNjHg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_-Rk3cMuyEe2COtMR7zNjHg" name="urmatorulMeniu" type="_LDWWQMuyEe2COtMR7zNjHg"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_sd3iEMuuEe2COtMR7zNjHg" name="afisare" isAbstract="true"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_w60OgMuuEe2COtMR7zNjHg" name="afisareOptiuni" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_CSTh8MuzEe2COtMR7zNjHg" name="getUrmatorulMeniu"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pLsugMsxEe2COtMR7zNjHg" name="Sedinta">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_sXPdcMsxEe2COtMR7zNjHg" name="titlu" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_tgVMcMsxEe2COtMR7zNjHg" name="descriere" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ukfYIMsxEe2COtMR7zNjHg" name="data" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vcqWQMsxEe2COtMR7zNjHg" name="ora" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_wIeTYMsxEe2COtMR7zNjHg" name="manager" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_04g68MsxEe2COtMR7zNjHg" name="idSedinta" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_zW1QUssyEe2COtMR7zNjHg" name="angajat" type="_79Ke4MswEe2COtMR7zNjHg" association="_zW0pQMsyEe2COtMR7zNjHg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zW1QU8syEe2COtMR7zNjHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zW1QVMsyEe2COtMR7zNjHg" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_-gfFUMsyEe2COtMR7zNjHg" name="status" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_0sGSUcuvEe2COtMR7zNjHg" name="meniu" type="_frim4MsxEe2COtMR7zNjHg" association="_0sFrQMuvEe2COtMR7zNjHg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0sGSUsuvEe2COtMR7zNjHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0sGSU8uvEe2COtMR7zNjHg" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_7R2mIMsyEe2COtMR7zNjHg" name="afisare"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_C_0XYMszEe2COtMR7zNjHg" name="afisareDreptNotificare"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IBwAMMszEe2COtMR7zNjHg" name="isPending"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zW0pQMsyEe2COtMR7zNjHg" memberEnd="_zW1QUssyEe2COtMR7zNjHg _zW1QVcsyEe2COtMR7zNjHg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zW1QUMsyEe2COtMR7zNjHg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zW1QUcsyEe2COtMR7zNjHg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_zW1QVcsyEe2COtMR7zNjHg" name="sedinte" type="_pLsugMsxEe2COtMR7zNjHg" association="_zW0pQMsyEe2COtMR7zNjHg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0pOFQMsyEe2COtMR7zNjHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0pw30MsyEe2COtMR7zNjHg" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EgEMQMuuEe2COtMR7zNjHg" name="Meniu Logare">
+      <generalization xmi:type="uml:Generalization" xmi:id="_hqJg0MuuEe2COtMR7zNjHg" general="_frim4MsxEe2COtMR7zNjHg"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_viUKgMuuEe2COtMR7zNjHg" name="afisare"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_y33xEMuuEe2COtMR7zNjHg" name="logare" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_e5orkMuvEe2COtMR7zNjHg" name="afisareOptiuni" visibility="private"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_O4aqsMuvEe2COtMR7zNjHg" name="Meniu Angajat">
+      <generalization xmi:type="uml:Generalization" xmi:id="__FUv8MuvEe2COtMR7zNjHg" general="_frim4MsxEe2COtMR7zNjHg"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_TIHlUMuvEe2COtMR7zNjHg" name="afisare"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_UtjSEMuvEe2COtMR7zNjHg" name="afisareNotificari" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_fPDh8MuvEe2COtMR7zNjHg" name="afisareOptiuni" visibility="private"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_0sFrQMuvEe2COtMR7zNjHg" memberEnd="_0sGSUcuvEe2COtMR7zNjHg _0sGSVMuvEe2COtMR7zNjHg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0sFrQcuvEe2COtMR7zNjHg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0sGSUMuvEe2COtMR7zNjHg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_0sGSVMuvEe2COtMR7zNjHg" name="sedinta" type="_pLsugMsxEe2COtMR7zNjHg" association="_0sFrQMuvEe2COtMR7zNjHg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4YBKcMuvEe2COtMR7zNjHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4YGC8MuvEe2COtMR7zNjHg" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Cn3poMuwEe2COtMR7zNjHg" name="Meniu Sedinte">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Gpym8MuwEe2COtMR7zNjHg" general="_frim4MsxEe2COtMR7zNjHg"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_HsXeQMuwEe2COtMR7zNjHg" name="afisare"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_HsYsYMuwEe2COtMR7zNjHg" name="afisareOptiuni" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_JCx3kMuwEe2COtMR7zNjHg" name="modificareStatusSedinta" visibility="private"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NY5jQMuwEe2COtMR7zNjHg" name="Meniu manager">
+      <generalization xmi:type="uml:Generalization" xmi:id="_-1tKIMuwEe2COtMR7zNjHg" general="_O4aqsMuvEe2COtMR7zNjHg"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_BJ1v8MuxEe2COtMR7zNjHg" name="afisareOptiuni" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_BJ3lIMuxEe2COtMR7zNjHg" name="afisare"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FhAkgMuxEe2COtMR7zNjHg" name="Meniu inregistrare angajat nou">
+      <generalization xmi:type="uml:Generalization" xmi:id="_K5N_UMuxEe2COtMR7zNjHg" general="_frim4MsxEe2COtMR7zNjHg"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_L6HboMuxEe2COtMR7zNjHg" name="afisareOptiuni" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Mr76IMuxEe2COtMR7zNjHg" name="inregistrareAngajatNou" visibility="private"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Ux0cIMuxEe2COtMR7zNjHg" name="Meniu gestionare informatii cont">
+      <generalization xmi:type="uml:Generalization" xmi:id="_seiwIMuxEe2COtMR7zNjHg" general="_frim4MsxEe2COtMR7zNjHg"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_hiFpoMuxEe2COtMR7zNjHg" name="afisare"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_hiG3wMuxEe2COtMR7zNjHg" name="afisareOptiuni" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_l98J4MuxEe2COtMR7zNjHg" name="schimbareParola"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_LDWWQMuyEe2COtMR7zNjHg" name="TipuriMeniu">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Ox9WAMuyEe2COtMR7zNjHg" name="Meniu Angajat"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_RNj1wMuyEe2COtMR7zNjHg" name="Meniu Manager"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SevJwMuyEe2COtMR7zNjHg" name="Meniu Sedinte"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_UrR50MuyEe2COtMR7zNjHg" name="Meniu inregistrare angajat nou"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_XT7XEMuyEe2COtMR7zNjHg" name="Meniu gestionare informatii cont"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_gPMB4MuyEe2COtMR7zNjHg" name="Meniu logare"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SOFt0MsyEe2COtMR7zNjHg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SOL0cMsyEe2COtMR7zNjHg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+    </profileApplication>
+  </uml:Model>
+  <Codegen:GeneratorHint xmi:id="_SOXaoMsyEe2COtMR7zNjHg" base_Element="_Tl8VwMsrEe2COtMR7zNjHg" generatorID="Standard Java">
+    <language xmi:type="Codegen:Language" href="pathmap://Codegen_PROFILES/languages.uml#_2Zt6YCjREeayco6FJ_OtTQ"/>
+  </Codegen:GeneratorHint>
+</xmi:XMI>

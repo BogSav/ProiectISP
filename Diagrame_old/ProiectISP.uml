@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_OlPY0MsnEe2COtMR7zNjHg" name="ProiectISP">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_Oli60MsnEe2COtMR7zNjHg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Xt_tEMsnEe2COtMR7zNjHg" name="Angajat"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_669KEMsnEe2COtMR7zNjHg" name="Manager">
+    <generalization xmi:type="uml:Generalization" xmi:id="_D-qmQMsoEe2COtMR7zNjHg" general="_Xt_tEMsnEe2COtMR7zNjHg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_FeuDwMsoEe2COtMR7zNjHg" name="Sistem programare sedinte" useCase="_KVY3wMsoEe2COtMR7zNjHg _QixAAMsoEe2COtMR7zNjHg _h0sa0MsoEe2COtMR7zNjHg _KHg-YMspEe2COtMR7zNjHg _gZJ0cMspEe2COtMR7zNjHg _2PwUUMspEe2COtMR7zNjHg _D0uVMMsqEe2COtMR7zNjHg _WLfRIMsqEe2COtMR7zNjHg _tGJkIMssEe2COtMR7zNjHg _jflyMMsvEe2COtMR7zNjHg _myJIEMsvEe2COtMR7zNjHg _k3eGgMuwEe2COtMR7zNjHg">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_KVY3wMsoEe2COtMR7zNjHg" name="Login" subject="_FeuDwMsoEe2COtMR7zNjHg"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_QixAAMsoEe2COtMR7zNjHg" name="Inregistrare angajat nou" subject="_FeuDwMsoEe2COtMR7zNjHg">
+      <include xmi:type="uml:Include" xmi:id="_pSHs4MuwEe2COtMR7zNjHg" addition="_k3eGgMuwEe2COtMR7zNjHg"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_h0sa0MsoEe2COtMR7zNjHg" name="Creare sedinta" subject="_FeuDwMsoEe2COtMR7zNjHg">
+      <include xmi:type="uml:Include" xmi:id="_fJ8PUMspEe2COtMR7zNjHg" addition="_KHg-YMspEe2COtMR7zNjHg"/>
+      <include xmi:type="uml:Include" xmi:id="_ji9eAMspEe2COtMR7zNjHg" addition="_gZJ0cMspEe2COtMR7zNjHg"/>
+      <include xmi:type="uml:Include" xmi:id="_Iv7D4MsqEe2COtMR7zNjHg" addition="_D0uVMMsqEe2COtMR7zNjHg"/>
+      <include xmi:type="uml:Include" xmi:id="_xYdG0MssEe2COtMR7zNjHg" addition="_tGJkIMssEe2COtMR7zNjHg"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_KHg-YMspEe2COtMR7zNjHg" name="Introducere data si ora" subject="_FeuDwMsoEe2COtMR7zNjHg"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_gZJ0cMspEe2COtMR7zNjHg" name="Selectare participanti" subject="_FeuDwMsoEe2COtMR7zNjHg"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_2PwUUMspEe2COtMR7zNjHg" name="Confirmare participare sedinta" subject="_FeuDwMsoEe2COtMR7zNjHg">
+      <extend xmi:type="uml:Extend" xmi:id="_gmINIMuwEe2COtMR7zNjHg" extendedCase="_WLfRIMsqEe2COtMR7zNjHg" extensionLocation="_gmI0MMuwEe2COtMR7zNjHg"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_sbP34MsqEe2COtMR7zNjHg" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_pMiUMMuuEe2COtMR7zNjHg" name="ExtensionPoint2"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_D0uVMMsqEe2COtMR7zNjHg" name="Trimitere notifcare angajati" subject="_FeuDwMsoEe2COtMR7zNjHg"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_WLfRIMsqEe2COtMR7zNjHg" name="Verificare sedinte" subject="_FeuDwMsoEe2COtMR7zNjHg">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_gmI0MMuwEe2COtMR7zNjHg" name="ExtensionPoint1"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_tGJkIMssEe2COtMR7zNjHg" name="Introducere titlu si descreiere sedinta" subject="_FeuDwMsoEe2COtMR7zNjHg"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_jflyMMsvEe2COtMR7zNjHg" name="Vizualizare si gestionare informatii cont" subject="_FeuDwMsoEe2COtMR7zNjHg">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_fJt5gMuwEe2COtMR7zNjHg" name="ExtensionPoint1"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_myJIEMsvEe2COtMR7zNjHg" name="Schimbare parola" subject="_FeuDwMsoEe2COtMR7zNjHg">
+      <extend xmi:type="uml:Extend" xmi:id="_fJtScMuwEe2COtMR7zNjHg" extendedCase="_jflyMMsvEe2COtMR7zNjHg" extensionLocation="_fJt5gMuwEe2COtMR7zNjHg"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_o8rtAMsvEe2COtMR7zNjHg" name="ExtensionPoint1"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_k3eGgMuwEe2COtMR7zNjHg" name="Introducere date angajat nou" subject="_FeuDwMsoEe2COtMR7zNjHg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Vj3iYMsoEe2COtMR7zNjHg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_W7k8MMsoEe2COtMR7zNjHg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lWmbUMsoEe2COtMR7zNjHg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_b6WRYMsqEe2COtMR7zNjHg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qPRWQMsvEe2COtMR7zNjHg"/>
+</uml:Model>

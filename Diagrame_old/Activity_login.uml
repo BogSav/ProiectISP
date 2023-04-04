@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_6lYX4M42Ee2Wu8jhDqDbqg" name="Activity_login">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_6m4zwM42Ee2Wu8jhDqDbqg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_6l4HIM42Ee2Wu8jhDqDbqg" name="Login Sistem Programare Sedinte" node="_h6_FQM43Ee2Wu8jhDqDbqg _qWVRYM5tEe2Pa959en0Wiw _qWXtoM5tEe2Pa959en0Wiw _qWZi0M5tEe2Pa959en0Wiw _qWcmIM5tEe2Pa959en0Wiw _qWebUM5tEe2Pa959en0Wiw _qWfpcM5tEe2Pa959en0Wiw _qWiswM5tEe2Pa959en0Wiw _cezrcM5uEe2Pa959en0Wiw _mYBzUM5uEe2Pa959en0Wiw _8rqYAM5vEe2Pa959en0Wiw _AQa4MM5wEe2Pa959en0Wiw">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_zgal4M5uEe2Pa959en0Wiw" target="_cezrcM5uEe2Pa959en0Wiw" source="_qWZi0M5tEe2Pa959en0Wiw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_41YfcM5uEe2Pa959en0Wiw" target="_qWebUM5tEe2Pa959en0Wiw" source="_cezrcM5uEe2Pa959en0Wiw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_6JnugM5uEe2Pa959en0Wiw" target="_qWVRYM5tEe2Pa959en0Wiw" source="_qWebUM5tEe2Pa959en0Wiw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_7dqwUM5uEe2Pa959en0Wiw" target="_qWcmIM5tEe2Pa959en0Wiw" source="_qWVRYM5tEe2Pa959en0Wiw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Rqf-4M5vEe2Pa959en0Wiw" target="_qWZi0M5tEe2Pa959en0Wiw" source="_qWVRYM5tEe2Pa959en0Wiw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hxl-QM5vEe2Pa959en0Wiw" target="_qWfpcM5tEe2Pa959en0Wiw" source="_qWcmIM5tEe2Pa959en0Wiw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_jZTi8M5vEe2Pa959en0Wiw" target="_mYBzUM5uEe2Pa959en0Wiw" source="_qWfpcM5tEe2Pa959en0Wiw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_n5bfMM5vEe2Pa959en0Wiw" target="_qWXtoM5tEe2Pa959en0Wiw" source="_mYBzUM5uEe2Pa959en0Wiw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_o_uY4M5vEe2Pa959en0Wiw" target="_qWcmIM5tEe2Pa959en0Wiw" source="_qWXtoM5tEe2Pa959en0Wiw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_1M6ugM5vEe2Pa959en0Wiw" target="_qWiswM5tEe2Pa959en0Wiw" source="_qWXtoM5tEe2Pa959en0Wiw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_-ZImcM5vEe2Pa959en0Wiw" target="_qWZi0M5tEe2Pa959en0Wiw" source="_8rqYAM5vEe2Pa959en0Wiw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_EKFRYM5wEe2Pa959en0Wiw" target="_AQa4MM5wEe2Pa959en0Wiw" source="_qWiswM5tEe2Pa959en0Wiw"/>
+    <node xmi:type="uml:AcceptEventAction" xmi:id="_h6_FQM43Ee2Wu8jhDqDbqg" name="AcceptEventAction3"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_qWVRYM5tEe2Pa959en0Wiw" incoming="_6JnugM5uEe2Pa959en0Wiw" outgoing="_7dqwUM5uEe2Pa959en0Wiw _Rqf-4M5vEe2Pa959en0Wiw">
+      <name xsi:nil="true"/>
+    </node>
+    <node xmi:type="uml:DecisionNode" xmi:id="_qWXtoM5tEe2Pa959en0Wiw" incoming="_n5bfMM5vEe2Pa959en0Wiw" outgoing="_o_uY4M5vEe2Pa959en0Wiw _1M6ugM5vEe2Pa959en0Wiw">
+      <name xsi:nil="true"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_qWZi0M5tEe2Pa959en0Wiw" name="Solicitare email angajat" incoming="_Rqf-4M5vEe2Pa959en0Wiw _-ZImcM5vEe2Pa959en0Wiw" outgoing="_zgal4M5uEe2Pa959en0Wiw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_qWcmIM5tEe2Pa959en0Wiw" name="Solicitare parola" incoming="_7dqwUM5uEe2Pa959en0Wiw _o_uY4M5vEe2Pa959en0Wiw" outgoing="_hxl-QM5vEe2Pa959en0Wiw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_qWebUM5tEe2Pa959en0Wiw" name="Verificare email angajat" incoming="_41YfcM5uEe2Pa959en0Wiw" outgoing="_6JnugM5uEe2Pa959en0Wiw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_qWfpcM5tEe2Pa959en0Wiw" name="Introducere parola" incoming="_hxl-QM5vEe2Pa959en0Wiw" outgoing="_jZTi8M5vEe2Pa959en0Wiw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_qWiswM5tEe2Pa959en0Wiw" name="Afisare meniu &amp; notificari" incoming="_1M6ugM5vEe2Pa959en0Wiw" outgoing="_EKFRYM5wEe2Pa959en0Wiw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_cezrcM5uEe2Pa959en0Wiw" name="Introducere email angajat" incoming="_zgal4M5uEe2Pa959en0Wiw" outgoing="_41YfcM5uEe2Pa959en0Wiw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_mYBzUM5uEe2Pa959en0Wiw" name="Verificare parola" incoming="_jZTi8M5vEe2Pa959en0Wiw" outgoing="_n5bfMM5vEe2Pa959en0Wiw"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_8rqYAM5vEe2Pa959en0Wiw" name="Meniu Login" outgoing="_-ZImcM5vEe2Pa959en0Wiw"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_AQa4MM5wEe2Pa959en0Wiw" name="Meniu angajat" incoming="_EKFRYM5wEe2Pa959en0Wiw"/>
+  </packagedElement>
+</uml:Model>
