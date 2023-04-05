@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_wgR8oNPHEe2DpuaRRVKwPg" name="Editare_sedinta">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_wine8NPHEe2DpuaRRVKwPg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_whF08NPHEe2DpuaRRVKwPg" name="Editare sedinta" node="_lxaJsNPIEe2DpuaRRVKwPg _u_SOgNPIEe2DpuaRRVKwPg _yCb2cNPIEe2DpuaRRVKwPg _IPknANPJEe2DpuaRRVKwPg _3c760NPJEe2DpuaRRVKwPg _Kp434NPKEe2DpuaRRVKwPg _n6HQsNPKEe2DpuaRRVKwPg _1VnzkNPKEe2DpuaRRVKwPg _zR2TENPMEe2DpuaRRVKwPg _BRIKANPQEe2DpuaRRVKwPg _D4aqcNPSEe2DpuaRRVKwPg _ekMwkNPSEe2DpuaRRVKwPg _i3kDMNPSEe2DpuaRRVKwPg _lHzAcNPSEe2DpuaRRVKwPg _zm7jgNPSEe2DpuaRRVKwPg _5bwo4NPSEe2DpuaRRVKwPg _KZ0CQNPPEe2DpuaRRVKwPg _ABauQNPTEe2DpuaRRVKwPg _SDaeoNPUEe2DpuaRRVKwPg _jktLINPUEe2DpuaRRVKwPg _yCnmMNPUEe2DpuaRRVKwPg _3mW7kNPUEe2DpuaRRVKwPg _q7eu8NPVEe2DpuaRRVKwPg _b9yyMNPWEe2DpuaRRVKwPg _yk3lYNPZEe2DpuaRRVKwPg" group="_6odRENPIEe2DpuaRRVKwPg _9HopQNPIEe2DpuaRRVKwPg _Oe-18NPREe2DpuaRRVKwPg">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_EuLj4NPJEe2DpuaRRVKwPg" inPartition="_6odRENPIEe2DpuaRRVKwPg" target="_u_SOgNPIEe2DpuaRRVKwPg" source="_lxaJsNPIEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_F2kvUNPJEe2DpuaRRVKwPg" inPartition="_6odRENPIEe2DpuaRRVKwPg" target="_yCb2cNPIEe2DpuaRRVKwPg" source="_u_SOgNPIEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Mv27UNPJEe2DpuaRRVKwPg" inPartition="_6odRENPIEe2DpuaRRVKwPg" target="_lxaJsNPIEe2DpuaRRVKwPg" source="_IPknANPJEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_zawCUNPKEe2DpuaRRVKwPg" inPartition="_6odRENPIEe2DpuaRRVKwPg" target="_n6HQsNPKEe2DpuaRRVKwPg" source="_3c760NPJEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_2SwKMNPKEe2DpuaRRVKwPg" name="[titlu si descriere]" inPartition="_6odRENPIEe2DpuaRRVKwPg" target="_1VnzkNPKEe2DpuaRRVKwPg" source="_n6HQsNPKEe2DpuaRRVKwPg">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_F4704NPLEe2DpuaRRVKwPg" name="titlu si descriere"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_-ecVENPREe2DpuaRRVKwPg" name="[data si ora]" inPartition="_6odRENPIEe2DpuaRRVKwPg" target="_zR2TENPMEe2DpuaRRVKwPg" source="_n6HQsNPKEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_IKmRUNPSEe2DpuaRRVKwPg" target="_D4aqcNPSEe2DpuaRRVKwPg" source="_1VnzkNPKEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Kh440NPSEe2DpuaRRVKwPg" name="[Nu]" target="_1VnzkNPKEe2DpuaRRVKwPg" source="_D4aqcNPSEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_m6QckNPSEe2DpuaRRVKwPg" target="_lHzAcNPSEe2DpuaRRVKwPg" source="_zR2TENPMEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_p8zAgNPSEe2DpuaRRVKwPg" name="[Nu]" target="_zR2TENPMEe2DpuaRRVKwPg" source="_lHzAcNPSEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_s5gpQNPSEe2DpuaRRVKwPg" name="[Da]" inPartition="_Oe-18NPREe2DpuaRRVKwPg" target="_ekMwkNPSEe2DpuaRRVKwPg" source="_D4aqcNPSEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_uzIdUNPSEe2DpuaRRVKwPg" name="[Da]" inPartition="_Oe-18NPREe2DpuaRRVKwPg" target="_i3kDMNPSEe2DpuaRRVKwPg" source="_lHzAcNPSEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_EkLHwNPTEe2DpuaRRVKwPg" inPartition="_Oe-18NPREe2DpuaRRVKwPg" target="_5bwo4NPSEe2DpuaRRVKwPg" source="_zm7jgNPSEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_FynQ0NPTEe2DpuaRRVKwPg" target="_KZ0CQNPPEe2DpuaRRVKwPg" source="_5bwo4NPSEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Gpsp0NPTEe2DpuaRRVKwPg" target="_ABauQNPTEe2DpuaRRVKwPg" source="_KZ0CQNPPEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_I1yG4NPTEe2DpuaRRVKwPg" name="[sala]" target="_zm7jgNPSEe2DpuaRRVKwPg" source="_n6HQsNPKEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_I2BiANPUEe2DpuaRRVKwPg" name="[adaugare participanti]" inPartition="_6odRENPIEe2DpuaRRVKwPg" target="_BRIKANPQEe2DpuaRRVKwPg" source="_n6HQsNPKEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_V8x84NPUEe2DpuaRRVKwPg" name="[eliminare participanti]" inPartition="_6odRENPIEe2DpuaRRVKwPg" target="_SDaeoNPUEe2DpuaRRVKwPg" source="_n6HQsNPKEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_p6ExwNPUEe2DpuaRRVKwPg" target="_jktLINPUEe2DpuaRRVKwPg" source="_BRIKANPQEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_t_PQUNPUEe2DpuaRRVKwPg" name="[Nu]" target="_BRIKANPQEe2DpuaRRVKwPg" source="_jktLINPUEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_0VJCcNPUEe2DpuaRRVKwPg" name="[Da]" inPartition="_Oe-18NPREe2DpuaRRVKwPg" target="_yCnmMNPUEe2DpuaRRVKwPg" source="_jktLINPUEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_-nk7kNPUEe2DpuaRRVKwPg" target="_3mW7kNPUEe2DpuaRRVKwPg" source="_SDaeoNPUEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_FEtXENPVEe2DpuaRRVKwPg" target="_3c760NPJEe2DpuaRRVKwPg" source="_ekMwkNPSEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ItfboNPVEe2DpuaRRVKwPg" target="_3c760NPJEe2DpuaRRVKwPg" source="_i3kDMNPSEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_LBPm8NPVEe2DpuaRRVKwPg" target="_3c760NPJEe2DpuaRRVKwPg" source="_zm7jgNPSEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_SUfyINPVEe2DpuaRRVKwPg" target="_3c760NPJEe2DpuaRRVKwPg" source="_ABauQNPTEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_VpjpcNPVEe2DpuaRRVKwPg" target="_3c760NPJEe2DpuaRRVKwPg" source="_yCnmMNPUEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_XorBgNPVEe2DpuaRRVKwPg" target="_3c760NPJEe2DpuaRRVKwPg" source="_3mW7kNPUEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_tgykUNPVEe2DpuaRRVKwPg" name="[Save]" target="_q7eu8NPVEe2DpuaRRVKwPg" source="_n6HQsNPKEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_T19IYNPWEe2DpuaRRVKwPg" name="[Nu]" target="_yCb2cNPIEe2DpuaRRVKwPg" source="_q7eu8NPVEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_gYgqANPWEe2DpuaRRVKwPg" name="[Da]" target="_b9yyMNPWEe2DpuaRRVKwPg" source="_q7eu8NPVEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_whZRwNPZEe2DpuaRRVKwPg" inPartition="_6odRENPIEe2DpuaRRVKwPg" target="_3c760NPJEe2DpuaRRVKwPg" source="_yCb2cNPIEe2DpuaRRVKwPg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_3ydroNPZEe2DpuaRRVKwPg" inPartition="_9HopQNPIEe2DpuaRRVKwPg" target="_yk3lYNPZEe2DpuaRRVKwPg" source="_b9yyMNPWEe2DpuaRRVKwPg"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_6odRENPIEe2DpuaRRVKwPg" name="Manager" node="_lxaJsNPIEe2DpuaRRVKwPg _u_SOgNPIEe2DpuaRRVKwPg _yCb2cNPIEe2DpuaRRVKwPg _IPknANPJEe2DpuaRRVKwPg _3c760NPJEe2DpuaRRVKwPg _n6HQsNPKEe2DpuaRRVKwPg _1VnzkNPKEe2DpuaRRVKwPg _zR2TENPMEe2DpuaRRVKwPg _KZ0CQNPPEe2DpuaRRVKwPg _BRIKANPQEe2DpuaRRVKwPg _SDaeoNPUEe2DpuaRRVKwPg" edge="_EuLj4NPJEe2DpuaRRVKwPg _F2kvUNPJEe2DpuaRRVKwPg _Mv27UNPJEe2DpuaRRVKwPg _zawCUNPKEe2DpuaRRVKwPg _2SwKMNPKEe2DpuaRRVKwPg _-ecVENPREe2DpuaRRVKwPg _I2BiANPUEe2DpuaRRVKwPg _V8x84NPUEe2DpuaRRVKwPg _whZRwNPZEe2DpuaRRVKwPg"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_9HopQNPIEe2DpuaRRVKwPg" name="Sistem de notificare mail" node="_b9yyMNPWEe2DpuaRRVKwPg _yk3lYNPZEe2DpuaRRVKwPg" edge="_3ydroNPZEe2DpuaRRVKwPg"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_Oe-18NPREe2DpuaRRVKwPg" name="Sistemul aplicatiei" node="_D4aqcNPSEe2DpuaRRVKwPg _ekMwkNPSEe2DpuaRRVKwPg _i3kDMNPSEe2DpuaRRVKwPg _lHzAcNPSEe2DpuaRRVKwPg _zm7jgNPSEe2DpuaRRVKwPg _5bwo4NPSEe2DpuaRRVKwPg _ABauQNPTEe2DpuaRRVKwPg _jktLINPUEe2DpuaRRVKwPg _yCnmMNPUEe2DpuaRRVKwPg _3mW7kNPUEe2DpuaRRVKwPg _q7eu8NPVEe2DpuaRRVKwPg" edge="_s5gpQNPSEe2DpuaRRVKwPg _uzIdUNPSEe2DpuaRRVKwPg _EkLHwNPTEe2DpuaRRVKwPg _0VJCcNPUEe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_lxaJsNPIEe2DpuaRRVKwPg" name="Verificare sedinte" incoming="_Mv27UNPJEe2DpuaRRVKwPg" outgoing="_EuLj4NPJEe2DpuaRRVKwPg" inPartition="_6odRENPIEe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_u_SOgNPIEe2DpuaRRVKwPg" name="Editare sedinte" incoming="_EuLj4NPJEe2DpuaRRVKwPg" outgoing="_F2kvUNPJEe2DpuaRRVKwPg" inPartition="_6odRENPIEe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yCb2cNPIEe2DpuaRRVKwPg" name="Selectie sedinta de editat" incoming="_F2kvUNPJEe2DpuaRRVKwPg _T19IYNPWEe2DpuaRRVKwPg" outgoing="_whZRwNPZEe2DpuaRRVKwPg" inPartition="_6odRENPIEe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_IPknANPJEe2DpuaRRVKwPg" name="Meniu principal(start)" outgoing="_Mv27UNPJEe2DpuaRRVKwPg" inPartition="_6odRENPIEe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_3c760NPJEe2DpuaRRVKwPg" name="Alegere informatii de editat" incoming="_LBPm8NPVEe2DpuaRRVKwPg _SUfyINPVEe2DpuaRRVKwPg _XorBgNPVEe2DpuaRRVKwPg _VpjpcNPVEe2DpuaRRVKwPg _ItfboNPVEe2DpuaRRVKwPg _FEtXENPVEe2DpuaRRVKwPg _whZRwNPZEe2DpuaRRVKwPg" outgoing="_zawCUNPKEe2DpuaRRVKwPg" inPartition="_6odRENPIEe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_Kp434NPKEe2DpuaRRVKwPg" name="Ce informatii se doresc editate"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_n6HQsNPKEe2DpuaRRVKwPg" incoming="_zawCUNPKEe2DpuaRRVKwPg" outgoing="_2SwKMNPKEe2DpuaRRVKwPg _-ecVENPREe2DpuaRRVKwPg _I1yG4NPTEe2DpuaRRVKwPg _I2BiANPUEe2DpuaRRVKwPg _V8x84NPUEe2DpuaRRVKwPg _tgykUNPVEe2DpuaRRVKwPg" inPartition="_6odRENPIEe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_1VnzkNPKEe2DpuaRRVKwPg" name="Introducere titlu si descriere" incoming="_2SwKMNPKEe2DpuaRRVKwPg _Kh440NPSEe2DpuaRRVKwPg" outgoing="_IKmRUNPSEe2DpuaRRVKwPg" inPartition="_6odRENPIEe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_zR2TENPMEe2DpuaRRVKwPg" name="Introducere data si ora" incoming="_-ecVENPREe2DpuaRRVKwPg _p8zAgNPSEe2DpuaRRVKwPg" outgoing="_m6QckNPSEe2DpuaRRVKwPg" inPartition="_6odRENPIEe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_KZ0CQNPPEe2DpuaRRVKwPg" name="Alegere sala" incoming="_FynQ0NPTEe2DpuaRRVKwPg" outgoing="_Gpsp0NPTEe2DpuaRRVKwPg" inPartition="_6odRENPIEe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BRIKANPQEe2DpuaRRVKwPg" name="Introducere participanti noi" incoming="_I2BiANPUEe2DpuaRRVKwPg _t_PQUNPUEe2DpuaRRVKwPg" outgoing="_p6ExwNPUEe2DpuaRRVKwPg" inPartition="_6odRENPIEe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_D4aqcNPSEe2DpuaRRVKwPg" name="Titlu si descriere valide?" incoming="_IKmRUNPSEe2DpuaRRVKwPg" outgoing="_Kh440NPSEe2DpuaRRVKwPg _s5gpQNPSEe2DpuaRRVKwPg" inPartition="_Oe-18NPREe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ekMwkNPSEe2DpuaRRVKwPg" name="Salvare titlu si descriere" incoming="_s5gpQNPSEe2DpuaRRVKwPg" outgoing="_FEtXENPVEe2DpuaRRVKwPg" inPartition="_Oe-18NPREe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_i3kDMNPSEe2DpuaRRVKwPg" name="Salvare data si ora" incoming="_uzIdUNPSEe2DpuaRRVKwPg" outgoing="_ItfboNPVEe2DpuaRRVKwPg" inPartition="_Oe-18NPREe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_lHzAcNPSEe2DpuaRRVKwPg" name="Data si ore valide?" incoming="_m6QckNPSEe2DpuaRRVKwPg" outgoing="_p8zAgNPSEe2DpuaRRVKwPg _uzIdUNPSEe2DpuaRRVKwPg" inPartition="_Oe-18NPREe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_zm7jgNPSEe2DpuaRRVKwPg" name="Alocare sala in functie de numarul de participanti" incoming="_I1yG4NPTEe2DpuaRRVKwPg" outgoing="_EkLHwNPTEe2DpuaRRVKwPg _LBPm8NPVEe2DpuaRRVKwPg" inPartition="_Oe-18NPREe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_5bwo4NPSEe2DpuaRRVKwPg" name="Afisare optiuni" incoming="_EkLHwNPTEe2DpuaRRVKwPg" outgoing="_FynQ0NPTEe2DpuaRRVKwPg" inPartition="_Oe-18NPREe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ABauQNPTEe2DpuaRRVKwPg" name="Salvare sala" incoming="_Gpsp0NPTEe2DpuaRRVKwPg" outgoing="_SUfyINPVEe2DpuaRRVKwPg" inPartition="_Oe-18NPREe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_SDaeoNPUEe2DpuaRRVKwPg" name="Selectare participanti de sters" incoming="_V8x84NPUEe2DpuaRRVKwPg" outgoing="_-nk7kNPUEe2DpuaRRVKwPg" inPartition="_6odRENPIEe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_jktLINPUEe2DpuaRRVKwPg" name="Participanti valizi?" incoming="_p6ExwNPUEe2DpuaRRVKwPg" outgoing="_t_PQUNPUEe2DpuaRRVKwPg _0VJCcNPUEe2DpuaRRVKwPg" inPartition="_Oe-18NPREe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yCnmMNPUEe2DpuaRRVKwPg" name="Salvare participanti" incoming="_0VJCcNPUEe2DpuaRRVKwPg" outgoing="_VpjpcNPVEe2DpuaRRVKwPg" inPartition="_Oe-18NPREe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_3mW7kNPUEe2DpuaRRVKwPg" name="Stergere participanti selectati" incoming="_-nk7kNPUEe2DpuaRRVKwPg" outgoing="_XorBgNPVEe2DpuaRRVKwPg" inPartition="_Oe-18NPREe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_q7eu8NPVEe2DpuaRRVKwPg" name="Au fost date editate?" incoming="_tgykUNPVEe2DpuaRRVKwPg" outgoing="_T19IYNPWEe2DpuaRRVKwPg _gYgqANPWEe2DpuaRRVKwPg" inPartition="_Oe-18NPREe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_b9yyMNPWEe2DpuaRRVKwPg" name="Notificare participanti cu datele actualizate" incoming="_gYgqANPWEe2DpuaRRVKwPg" outgoing="_3ydroNPZEe2DpuaRRVKwPg" inPartition="_9HopQNPIEe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_yk3lYNPZEe2DpuaRRVKwPg" name="Meniu principal" incoming="_3ydroNPZEe2DpuaRRVKwPg" inPartition="_9HopQNPIEe2DpuaRRVKwPg"/>
+  </packagedElement>
+</uml:Model>
