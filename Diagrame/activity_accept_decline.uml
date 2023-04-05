@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_75rboNO4Ee2smL22GnOnAw" name="activity_accept_decline">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_76MZANO4Ee2smL22GnOnAw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_75vGANO4Ee2smL22GnOnAw" name="Confirmare participare sedinta" node="_6pYb8NO5Ee2smL22GnOnAw _Mg-IkNO6Ee2smL22GnOnAw _ie9p4NO6Ee2smL22GnOnAw _rO1kENO6Ee2smL22GnOnAw _8ScPANO6Ee2smL22GnOnAw _EqdC0NO7Ee2smL22GnOnAw _u2rYANO7Ee2smL22GnOnAw _LmS-INO8Ee2smL22GnOnAw _WwN44NO8Ee2smL22GnOnAw _iXawENO9Ee2smL22GnOnAw _tYzZ4NO9Ee2smL22GnOnAw" group="_-cln0NO5Ee2smL22GnOnAw _BtZRQNO6Ee2smL22GnOnAw _U8UkQNO6Ee2smL22GnOnAw">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_OoAtkNO6Ee2smL22GnOnAw" inPartition="_-cln0NO5Ee2smL22GnOnAw" target="_Mg-IkNO6Ee2smL22GnOnAw" source="_6pYb8NO5Ee2smL22GnOnAw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_kWZsoNO6Ee2smL22GnOnAw" inPartition="_-cln0NO5Ee2smL22GnOnAw" target="_ie9p4NO6Ee2smL22GnOnAw" source="_Mg-IkNO6Ee2smL22GnOnAw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_w7tnUNO6Ee2smL22GnOnAw" inPartition="_-cln0NO5Ee2smL22GnOnAw" target="_rO1kENO6Ee2smL22GnOnAw" source="_ie9p4NO6Ee2smL22GnOnAw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_CpdbcNO7Ee2smL22GnOnAw" inPartition="_-cln0NO5Ee2smL22GnOnAw" target="_8ScPANO6Ee2smL22GnOnAw" source="_rO1kENO6Ee2smL22GnOnAw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Kzh54NO7Ee2smL22GnOnAw" name="[refuza sedinta]" target="_EqdC0NO7Ee2smL22GnOnAw" source="_8ScPANO6Ee2smL22GnOnAw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Xp36MNO7Ee2smL22GnOnAw" name="refuza sedinta"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yF6UINO7Ee2smL22GnOnAw" name="[accepta sedinta]" target="_u2rYANO7Ee2smL22GnOnAw" source="_8ScPANO6Ee2smL22GnOnAw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_98CNkNO7Ee2smL22GnOnAw" name="accepta sedinta"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_aL4HcNO8Ee2smL22GnOnAw" inPartition="_BtZRQNO6Ee2smL22GnOnAw" target="_WwN44NO8Ee2smL22GnOnAw" source="_EqdC0NO7Ee2smL22GnOnAw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_eyH50NO8Ee2smL22GnOnAw" name="[refuza sa introduca alta data/ora]" inPartition="_BtZRQNO6Ee2smL22GnOnAw" target="_u2rYANO7Ee2smL22GnOnAw" source="_WwN44NO8Ee2smL22GnOnAw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_3Sq3cNO8Ee2smL22GnOnAw" name="[accepta sa introduca alta ora/data]" target="_LmS-INO8Ee2smL22GnOnAw" source="_WwN44NO8Ee2smL22GnOnAw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_SsDDYNO9Ee2smL22GnOnAw" target="_u2rYANO7Ee2smL22GnOnAw" source="_LmS-INO8Ee2smL22GnOnAw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_lZxGwNO9Ee2smL22GnOnAw" target="_iXawENO9Ee2smL22GnOnAw" source="_u2rYANO7Ee2smL22GnOnAw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_v6yOcNO9Ee2smL22GnOnAw" inPartition="_U8UkQNO6Ee2smL22GnOnAw" target="_tYzZ4NO9Ee2smL22GnOnAw" source="_iXawENO9Ee2smL22GnOnAw"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_-cln0NO5Ee2smL22GnOnAw" name="Angajat" node="_6pYb8NO5Ee2smL22GnOnAw _Mg-IkNO6Ee2smL22GnOnAw _ie9p4NO6Ee2smL22GnOnAw _rO1kENO6Ee2smL22GnOnAw _8ScPANO6Ee2smL22GnOnAw _LmS-INO8Ee2smL22GnOnAw" edge="_OoAtkNO6Ee2smL22GnOnAw _kWZsoNO6Ee2smL22GnOnAw _w7tnUNO6Ee2smL22GnOnAw _CpdbcNO7Ee2smL22GnOnAw"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_BtZRQNO6Ee2smL22GnOnAw" name="Sistemul aplicatiei" node="_EqdC0NO7Ee2smL22GnOnAw _u2rYANO7Ee2smL22GnOnAw _WwN44NO8Ee2smL22GnOnAw" edge="_aL4HcNO8Ee2smL22GnOnAw _eyH50NO8Ee2smL22GnOnAw"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_U8UkQNO6Ee2smL22GnOnAw" name="Sistemul de mailing" node="_iXawENO9Ee2smL22GnOnAw _tYzZ4NO9Ee2smL22GnOnAw" edge="_v6yOcNO9Ee2smL22GnOnAw"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_6pYb8NO5Ee2smL22GnOnAw" name="Meniul principal (start)" outgoing="_OoAtkNO6Ee2smL22GnOnAw" inPartition="_-cln0NO5Ee2smL22GnOnAw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Mg-IkNO6Ee2smL22GnOnAw" name="Verificare sedinte" incoming="_OoAtkNO6Ee2smL22GnOnAw" outgoing="_kWZsoNO6Ee2smL22GnOnAw" inPartition="_-cln0NO5Ee2smL22GnOnAw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ie9p4NO6Ee2smL22GnOnAw" name="Selectare sedinta" incoming="_kWZsoNO6Ee2smL22GnOnAw" outgoing="_w7tnUNO6Ee2smL22GnOnAw" inPartition="_-cln0NO5Ee2smL22GnOnAw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_rO1kENO6Ee2smL22GnOnAw" name="Accepta sau refuza sedinta" incoming="_w7tnUNO6Ee2smL22GnOnAw" outgoing="_CpdbcNO7Ee2smL22GnOnAw" inPartition="_-cln0NO5Ee2smL22GnOnAw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_8ScPANO6Ee2smL22GnOnAw" incoming="_CpdbcNO7Ee2smL22GnOnAw" outgoing="_Kzh54NO7Ee2smL22GnOnAw _yF6UINO7Ee2smL22GnOnAw" inPartition="_-cln0NO5Ee2smL22GnOnAw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_EqdC0NO7Ee2smL22GnOnAw" name="Pop-up propunere reprogramare sedinta" incoming="_Kzh54NO7Ee2smL22GnOnAw" outgoing="_aL4HcNO8Ee2smL22GnOnAw" inPartition="_BtZRQNO6Ee2smL22GnOnAw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_u2rYANO7Ee2smL22GnOnAw" name="Salveaza noile detalii ale sedintei" incoming="_yF6UINO7Ee2smL22GnOnAw _eyH50NO8Ee2smL22GnOnAw _SsDDYNO9Ee2smL22GnOnAw" outgoing="_lZxGwNO9Ee2smL22GnOnAw" inPartition="_BtZRQNO6Ee2smL22GnOnAw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_LmS-INO8Ee2smL22GnOnAw" name="Introducere data/ora reprogramare" incoming="_3Sq3cNO8Ee2smL22GnOnAw" outgoing="_SsDDYNO9Ee2smL22GnOnAw" inPartition="_-cln0NO5Ee2smL22GnOnAw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_WwN44NO8Ee2smL22GnOnAw" incoming="_aL4HcNO8Ee2smL22GnOnAw" outgoing="_eyH50NO8Ee2smL22GnOnAw _3Sq3cNO8Ee2smL22GnOnAw" inPartition="_BtZRQNO6Ee2smL22GnOnAw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_iXawENO9Ee2smL22GnOnAw" name="Trimitere mail catre manager" incoming="_lZxGwNO9Ee2smL22GnOnAw" outgoing="_v6yOcNO9Ee2smL22GnOnAw" inPartition="_U8UkQNO6Ee2smL22GnOnAw"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_tYzZ4NO9Ee2smL22GnOnAw" name="Meniul principal (finish)" incoming="_v6yOcNO9Ee2smL22GnOnAw" inPartition="_U8UkQNO6Ee2smL22GnOnAw"/>
+  </packagedElement>
+</uml:Model>

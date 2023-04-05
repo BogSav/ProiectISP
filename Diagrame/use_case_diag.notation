@@ -262,7 +262,7 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e_EHs9MOEe2JYZj5fOLYCg"/>
     </children>
     <element xmi:type="uml:Activity" href="use_case_diag.uml#_e-_2QNMOEe2JYZj5fOLYCg"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e_C5kdMOEe2JYZj5fOLYCg" x="360" y="60" width="1181" height="1001"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e_C5kdMOEe2JYZj5fOLYCg" x="360" y="60" width="1241" height="1001"/>
   </children>
   <styles xmi:type="notation:StringValueStyle" xmi:id="_8l6GMdMNEe2JYZj5fOLYCg" name="diagram_compatibility_version" stringValue="1.4.0"/>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_8l6GMtMNEe2JYZj5fOLYCg"/>
