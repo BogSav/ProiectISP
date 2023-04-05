@@ -23,7 +23,7 @@
       <ownedOperation xmi:type="uml:Operation" xmi:id="__lf3gMswEe2COtMR7zNjHg" name="isManager"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_frim4MsxEe2COtMR7zNjHg" name="Meniu">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_mz_lYMszEe2COtMR7zNjHg" name="angajatLogat" type="_79Ke4MswEe2COtMR7zNjHg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_mz_lYMszEe2COtMR7zNjHg" name="angajatLogat" visibility="private" type="_79Ke4MswEe2COtMR7zNjHg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_-Rk3cMuyEe2COtMR7zNjHg" name="urmatorulMeniu" type="_LDWWQMuyEe2COtMR7zNjHg"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_sd3iEMuuEe2COtMR7zNjHg" name="afisare" isAbstract="true"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_w60OgMuuEe2COtMR7zNjHg" name="afisareOptiuni" visibility="private"/>
@@ -59,6 +59,12 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0sGSUsuvEe2COtMR7zNjHg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0sGSU8uvEe2COtMR7zNjHg" value="*"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4yAzMNPQEe2mWty8upbXaA" name="propuneriDataOra" visibility="private">
+        <type xmi:type="uml:Class" href="pathmap://PapyrusC_Cpp_LIBRARIES/STL.uml#_BU3RsDWpEea5ROkfuvcZmg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_RlrrsNPSEe2mWty8upbXaA" name="sala" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_7R2mIMsyEe2COtMR7zNjHg" name="afisare"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_C_0XYMszEe2COtMR7zNjHg" name="afisareDreptNotificare"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_IBwAMMszEe2COtMR7zNjHg" name="isPending"/>
@@ -83,6 +89,7 @@
       <ownedOperation xmi:type="uml:Operation" xmi:id="_TIHlUMuvEe2COtMR7zNjHg" name="afisare"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_UtjSEMuvEe2COtMR7zNjHg" name="afisareNotificari" visibility="private"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_fPDh8MuvEe2COtMR7zNjHg" name="afisareOptiuni" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_lyNE0NPREe2mWty8upbXaA" name="schimbareParola" visibility="private"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_0sFrQMuvEe2COtMR7zNjHg" memberEnd="_0sGSUcuvEe2COtMR7zNjHg _0sGSVMuvEe2COtMR7zNjHg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0sFrQcuvEe2COtMR7zNjHg" source="org.eclipse.papyrus">
@@ -95,9 +102,11 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Cn3poMuwEe2COtMR7zNjHg" name="Meniu Sedinte">
       <generalization xmi:type="uml:Generalization" xmi:id="_Gpym8MuwEe2COtMR7zNjHg" general="_frim4MsxEe2COtMR7zNjHg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_k67UANPQEe2mWty8upbXaA" name="sedintaCurenta" visibility="private" type="_pLsugMsxEe2COtMR7zNjHg"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_HsXeQMuwEe2COtMR7zNjHg" name="afisare"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_HsYsYMuwEe2COtMR7zNjHg" name="afisareOptiuni" visibility="private"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_JCx3kMuwEe2COtMR7zNjHg" name="modificareStatusSedinta" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_tCDMINPQEe2mWty8upbXaA" name="selectareSedinta" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_xUgf0NPQEe2mWty8upbXaA" name="getSedinta"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_NY5jQMuwEe2COtMR7zNjHg" name="Meniu manager">
       <generalization xmi:type="uml:Generalization" xmi:id="_-1tKIMuwEe2COtMR7zNjHg" general="_O4aqsMuvEe2COtMR7zNjHg"/>
@@ -122,6 +131,14 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_UrR50MuyEe2COtMR7zNjHg" name="Meniu inregistrare angajat nou"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_XT7XEMuyEe2COtMR7zNjHg" name="Meniu gestionare informatii cont"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_gPMB4MuyEe2COtMR7zNjHg" name="Meniu logare"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Dv4y0NPNEe2rCPkkGVpyjA" name="Meniu gestionare sedinta">
+      <generalization xmi:type="uml:Generalization" xmi:id="_dXohsNPQEe2mWty8upbXaA" general="_Cn3poMuwEe2COtMR7zNjHg"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_umxZINPOEe2rCPkkGVpyjA" name="afisare"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_vX8-cNPOEe2rCPkkGVpyjA" name="afisareOptiuni" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_z-bvcNPQEe2mWty8upbXaA" name="alegereDataOraNoua" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_gcQ64NPREe2mWty8upbXaA" name="acceptareSedinta" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_OD18oNPSEe2mWty8upbXaA" name="alegereSala" visibility="private"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SOFt0MsyEe2COtMR7zNjHg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SOL0cMsyEe2COtMR7zNjHg" source="http://www.eclipse.org/uml2/2.0.0/UML">
