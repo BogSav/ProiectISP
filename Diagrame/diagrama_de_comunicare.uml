@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_o9jUsNS8Ee2De6oMcwsk9g" name="diagrama_de_comunicare">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_o-0gANS8Ee2De6oMcwsk9g">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_o93dwNS8Ee2De6oMcwsk9g" name="Editare sedinta">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_HsOogdS9Ee2De6oMcwsk9g" name="" type="_o93dwNS8Ee2De6oMcwsk9g"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_q01mcNS8Ee2De6oMcwsk9g" name="Manager" coveredBy="_2wNzUNS8Ee2De6oMcwsk9g _-O3WMdS8Ee2De6oMcwsk9g _DWLOQNS9Ee2De6oMcwsk9g _E7r-EdS-Ee2De6oMcwsk9g _JDIUkdS-Ee2De6oMcwsk9g _d089stS-Ee2De6oMcwsk9g _jFnmENS-Ee2De6oMcwsk9g _2HR5IdS-Ee2De6oMcwsk9g _6kS3AdS-Ee2De6oMcwsk9g _LdQYMNS_Ee2De6oMcwsk9g"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_tfYhINS8Ee2De6oMcwsk9g" name="UI" coveredBy="_2wNzUdS8Ee2De6oMcwsk9g _-O3WMNS8Ee2De6oMcwsk9g _DWL1UNS9Ee2De6oMcwsk9g _lgHvEdS9Ee2De6oMcwsk9g _3jt3YNS9Ee2De6oMcwsk9g _E7r-ENS-Ee2De6oMcwsk9g _JDI7oNS-Ee2De6oMcwsk9g _THxpUNS-Ee2De6oMcwsk9g _ZpwvodS-Ee2De6oMcwsk9g _d089sdS-Ee2De6oMcwsk9g _jFnmEdS-Ee2De6oMcwsk9g _qbQ98NS-Ee2De6oMcwsk9g _viYBsdS-Ee2De6oMcwsk9g _2HR5INS-Ee2De6oMcwsk9g _6kTeENS-Ee2De6oMcwsk9g _-4iTYdS-Ee2De6oMcwsk9g _LdPxIdS_Ee2De6oMcwsk9g"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_vED_8NS8Ee2De6oMcwsk9g" name="Sistemul de notificare mail" coveredBy="_TbxG4dS_Ee2De6oMcwsk9g _aiAJwdS_Ee2De6oMcwsk9g"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_z3i9ENS8Ee2De6oMcwsk9g" name="Angajati" coveredBy="_aiAw0NS_Ee2De6oMcwsk9g"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_HsOogNS9Ee2De6oMcwsk9g" name="" represents="_HsOogdS9Ee2De6oMcwsk9g"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_hQcpoNS9Ee2De6oMcwsk9g" name="Backend" coveredBy="_lgHvEtS9Ee2De6oMcwsk9g _3jtQUdS9Ee2De6oMcwsk9g _THxpUdS-Ee2De6oMcwsk9g _ZpwvoNS-Ee2De6oMcwsk9g _qbQ98dS-Ee2De6oMcwsk9g _viYBsNS-Ee2De6oMcwsk9g _-4iTYtS-Ee2De6oMcwsk9g _TbxG4NS_Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_2wNzUNS8Ee2De6oMcwsk9g" name="Message5SendEvent" covered="_q01mcNS8Ee2De6oMcwsk9g" message="_2wGekNS8Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_2wNzUdS8Ee2De6oMcwsk9g" name="Message5ReceiveEvent" covered="_tfYhINS8Ee2De6oMcwsk9g" message="_2wGekNS8Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-O3WMNS8Ee2De6oMcwsk9g" name="Message8SendEvent" covered="_tfYhINS8Ee2De6oMcwsk9g" message="_-O2vINS8Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-O3WMdS8Ee2De6oMcwsk9g" name="Message8ReceiveEvent" covered="_q01mcNS8Ee2De6oMcwsk9g" message="_-O2vINS8Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DWLOQNS9Ee2De6oMcwsk9g" name="Message11SendEvent" covered="_q01mcNS8Ee2De6oMcwsk9g" message="_DWKnMNS9Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DWL1UNS9Ee2De6oMcwsk9g" name="Message11ReceiveEvent" covered="_tfYhINS8Ee2De6oMcwsk9g" message="_DWKnMNS9Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lgHvEdS9Ee2De6oMcwsk9g" name="Message17SendEvent" covered="_tfYhINS8Ee2De6oMcwsk9g" message="_lgHvENS9Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lgHvEtS9Ee2De6oMcwsk9g" name="Message17ReceiveEvent" covered="_hQcpoNS9Ee2De6oMcwsk9g" message="_lgHvENS9Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3jtQUdS9Ee2De6oMcwsk9g" name="Message20SendEvent" covered="_hQcpoNS9Ee2De6oMcwsk9g" message="_3jtQUNS9Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3jt3YNS9Ee2De6oMcwsk9g" name="Message20ReceiveEvent" covered="_tfYhINS8Ee2De6oMcwsk9g" message="_3jtQUNS9Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_E7r-ENS-Ee2De6oMcwsk9g" name="Message23SendEvent" covered="_tfYhINS8Ee2De6oMcwsk9g" message="_E7rXANS-Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_E7r-EdS-Ee2De6oMcwsk9g" name="Message23ReceiveEvent" covered="_q01mcNS8Ee2De6oMcwsk9g" message="_E7rXANS-Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JDIUkdS-Ee2De6oMcwsk9g" name="Message26SendEvent" covered="_q01mcNS8Ee2De6oMcwsk9g" message="_JDIUkNS-Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JDI7oNS-Ee2De6oMcwsk9g" name="Message26ReceiveEvent" covered="_tfYhINS8Ee2De6oMcwsk9g" message="_JDIUkNS-Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_THxpUNS-Ee2De6oMcwsk9g" name="Message29SendEvent" covered="_tfYhINS8Ee2De6oMcwsk9g" message="_THxCQNS-Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_THxpUdS-Ee2De6oMcwsk9g" name="Message29ReceiveEvent" covered="_hQcpoNS9Ee2De6oMcwsk9g" message="_THxCQNS-Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ZpwvoNS-Ee2De6oMcwsk9g" name="Message32SendEvent" covered="_hQcpoNS9Ee2De6oMcwsk9g" message="_ZpwIkNS-Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ZpwvodS-Ee2De6oMcwsk9g" name="Message32ReceiveEvent" covered="_tfYhINS8Ee2De6oMcwsk9g" message="_ZpwIkNS-Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_d089sdS-Ee2De6oMcwsk9g" name="Message35SendEvent" covered="_tfYhINS8Ee2De6oMcwsk9g" message="_d089sNS-Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_d089stS-Ee2De6oMcwsk9g" name="Message35ReceiveEvent" covered="_q01mcNS8Ee2De6oMcwsk9g" message="_d089sNS-Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_jFnmENS-Ee2De6oMcwsk9g" name="Message38SendEvent" covered="_q01mcNS8Ee2De6oMcwsk9g" message="_jFm_ANS-Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_jFnmEdS-Ee2De6oMcwsk9g" name="Message38ReceiveEvent" covered="_tfYhINS8Ee2De6oMcwsk9g" message="_jFm_ANS-Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qbQ98NS-Ee2De6oMcwsk9g" name="Message41SendEvent" covered="_tfYhINS8Ee2De6oMcwsk9g" message="_qbQW4NS-Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qbQ98dS-Ee2De6oMcwsk9g" name="Message41ReceiveEvent" covered="_hQcpoNS9Ee2De6oMcwsk9g" message="_qbQW4NS-Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_viYBsNS-Ee2De6oMcwsk9g" name="Message44SendEvent" covered="_hQcpoNS9Ee2De6oMcwsk9g" message="_viXaoNS-Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_viYBsdS-Ee2De6oMcwsk9g" name="Message44ReceiveEvent" covered="_tfYhINS8Ee2De6oMcwsk9g" message="_viXaoNS-Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_2HR5INS-Ee2De6oMcwsk9g" name="Message47SendEvent" covered="_tfYhINS8Ee2De6oMcwsk9g" message="_2HRSENS-Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_2HR5IdS-Ee2De6oMcwsk9g" name="Message47ReceiveEvent" covered="_q01mcNS8Ee2De6oMcwsk9g" message="_2HRSENS-Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6kS3AdS-Ee2De6oMcwsk9g" name="Message50SendEvent" covered="_q01mcNS8Ee2De6oMcwsk9g" message="_6kS3ANS-Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6kTeENS-Ee2De6oMcwsk9g" name="Message50ReceiveEvent" covered="_tfYhINS8Ee2De6oMcwsk9g" message="_6kS3ANS-Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-4iTYdS-Ee2De6oMcwsk9g" name="Message53SendEvent" covered="_tfYhINS8Ee2De6oMcwsk9g" message="_-4iTYNS-Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-4iTYtS-Ee2De6oMcwsk9g" name="Message53ReceiveEvent" covered="_hQcpoNS9Ee2De6oMcwsk9g" message="_-4iTYNS-Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LdPxIdS_Ee2De6oMcwsk9g" name="Message56SendEvent" covered="_tfYhINS8Ee2De6oMcwsk9g" message="_LdPxINS_Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LdQYMNS_Ee2De6oMcwsk9g" name="Message56ReceiveEvent" covered="_q01mcNS8Ee2De6oMcwsk9g" message="_LdPxINS_Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TbxG4NS_Ee2De6oMcwsk9g" name="Message59SendEvent" covered="_hQcpoNS9Ee2De6oMcwsk9g" message="_Tbwf0NS_Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TbxG4dS_Ee2De6oMcwsk9g" name="Message59ReceiveEvent" covered="_vED_8NS8Ee2De6oMcwsk9g" message="_Tbwf0NS_Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_aiAJwdS_Ee2De6oMcwsk9g" name="Message62SendEvent" covered="_vED_8NS8Ee2De6oMcwsk9g" message="_aiAJwNS_Ee2De6oMcwsk9g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_aiAw0NS_Ee2De6oMcwsk9g" name="Message62ReceiveEvent" covered="_z3i9ENS8Ee2De6oMcwsk9g" message="_aiAJwNS_Ee2De6oMcwsk9g"/>
+    <message xmi:type="uml:Message" xmi:id="_2wGekNS8Ee2De6oMcwsk9g" name="1.1.Solicitare editare sedinte" messageSort="asynchCall" receiveEvent="_2wNzUdS8Ee2De6oMcwsk9g" sendEvent="_2wNzUNS8Ee2De6oMcwsk9g"/>
+    <message xmi:type="uml:Message" xmi:id="_-O2vINS8Ee2De6oMcwsk9g" name="1.3.Afisare sedinte create de manager" messageSort="asynchCall" receiveEvent="_-O3WMdS8Ee2De6oMcwsk9g" sendEvent="_-O3WMNS8Ee2De6oMcwsk9g"/>
+    <message xmi:type="uml:Message" xmi:id="_DWKnMNS9Ee2De6oMcwsk9g" name="2.1.Solicitare editare o anumita sedinta" messageSort="asynchCall" receiveEvent="_DWL1UNS9Ee2De6oMcwsk9g" sendEvent="_DWLOQNS9Ee2De6oMcwsk9g"/>
+    <message xmi:type="uml:Message" xmi:id="_lgHvENS9Ee2De6oMcwsk9g" name="1.2.1.Solicitare lista sedinte create de manager" messageSort="asynchCall" receiveEvent="_lgHvEtS9Ee2De6oMcwsk9g" sendEvent="_lgHvEdS9Ee2De6oMcwsk9g"/>
+    <message xmi:type="uml:Message" xmi:id="_3jtQUNS9Ee2De6oMcwsk9g" name="1.2.2.Furnizare lista sedinte" messageSort="asynchCall" receiveEvent="_3jt3YNS9Ee2De6oMcwsk9g" sendEvent="_3jtQUdS9Ee2De6oMcwsk9g"/>
+    <message xmi:type="uml:Message" xmi:id="_E7rXANS-Ee2De6oMcwsk9g" name="2.2.Afisare optiuni de editare" messageSort="asynchCall" receiveEvent="_E7r-EdS-Ee2De6oMcwsk9g" sendEvent="_E7r-ENS-Ee2De6oMcwsk9g"/>
+    <message xmi:type="uml:Message" xmi:id="_JDIUkNS-Ee2De6oMcwsk9g" name="3.1.Solicitare editare date" messageSort="asynchCall" receiveEvent="_JDI7oNS-Ee2De6oMcwsk9g" sendEvent="_JDIUkdS-Ee2De6oMcwsk9g"/>
+    <message xmi:type="uml:Message" xmi:id="_THxCQNS-Ee2De6oMcwsk9g" name="3.2.1.Solicitare date actuale" messageSort="asynchCall" receiveEvent="_THxpUdS-Ee2De6oMcwsk9g" sendEvent="_THxpUNS-Ee2De6oMcwsk9g"/>
+    <message xmi:type="uml:Message" xmi:id="_ZpwIkNS-Ee2De6oMcwsk9g" name="3.2.2Furnizare date actuale" messageSort="asynchCall" receiveEvent="_ZpwvodS-Ee2De6oMcwsk9g" sendEvent="_ZpwvoNS-Ee2De6oMcwsk9g"/>
+    <message xmi:type="uml:Message" xmi:id="_d089sNS-Ee2De6oMcwsk9g" name="3.3.Afisare formular pentru editare date" messageSort="asynchCall" receiveEvent="_d089stS-Ee2De6oMcwsk9g" sendEvent="_d089sdS-Ee2De6oMcwsk9g"/>
+    <message xmi:type="uml:Message" xmi:id="_jFm_ANS-Ee2De6oMcwsk9g" name="3.4.Introducere date noi" messageSort="asynchCall" receiveEvent="_jFnmEdS-Ee2De6oMcwsk9g" sendEvent="_jFnmENS-Ee2De6oMcwsk9g"/>
+    <message xmi:type="uml:Message" xmi:id="_qbQW4NS-Ee2De6oMcwsk9g" name="3.5.Solicitare verificare si salvare" messageSort="asynchCall" receiveEvent="_qbQ98dS-Ee2De6oMcwsk9g" sendEvent="_qbQ98NS-Ee2De6oMcwsk9g"/>
+    <message xmi:type="uml:Message" xmi:id="_viXaoNS-Ee2De6oMcwsk9g" name="3.6.Furnizare stare validare si salvare" messageSort="asynchCall" receiveEvent="_viYBsdS-Ee2De6oMcwsk9g" sendEvent="_viYBsNS-Ee2De6oMcwsk9g"/>
+    <message xmi:type="uml:Message" xmi:id="_2HRSENS-Ee2De6oMcwsk9g" name="3.7.Afisare stare validare si salvare" messageSort="asynchCall" receiveEvent="_2HR5IdS-Ee2De6oMcwsk9g" sendEvent="_2HR5INS-Ee2De6oMcwsk9g"/>
+    <message xmi:type="uml:Message" xmi:id="_6kS3ANS-Ee2De6oMcwsk9g" name="4.1.Solicitare salvare si iesire" messageSort="asynchCall" receiveEvent="_6kTeENS-Ee2De6oMcwsk9g" sendEvent="_6kS3AdS-Ee2De6oMcwsk9g"/>
+    <message xmi:type="uml:Message" xmi:id="_-4iTYNS-Ee2De6oMcwsk9g" name="4.2.2.Solicitare finalizare editare" messageSort="asynchCall" receiveEvent="_-4iTYtS-Ee2De6oMcwsk9g" sendEvent="_-4iTYdS-Ee2De6oMcwsk9g"/>
+    <message xmi:type="uml:Message" xmi:id="_LdPxINS_Ee2De6oMcwsk9g" name="4.2.1.Redirectionare meniu principal" messageSort="asynchCall" receiveEvent="_LdQYMNS_Ee2De6oMcwsk9g" sendEvent="_LdPxIdS_Ee2De6oMcwsk9g"/>
+    <message xmi:type="uml:Message" xmi:id="_Tbwf0NS_Ee2De6oMcwsk9g" name="4.3.Solicitare notificare angajati particpanti la sedinta" messageSort="asynchCall" receiveEvent="_TbxG4dS_Ee2De6oMcwsk9g" sendEvent="_TbxG4NS_Ee2De6oMcwsk9g"/>
+    <message xmi:type="uml:Message" xmi:id="_aiAJwNS_Ee2De6oMcwsk9g" name="4.4. Notificare angajati" messageSort="asynchCall" receiveEvent="_aiAw0NS_Ee2De6oMcwsk9g" sendEvent="_aiAJwdS_Ee2De6oMcwsk9g"/>
+  </packagedElement>
+</uml:Model>
