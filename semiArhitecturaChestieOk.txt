@@ -1,0 +1,47 @@
+void main(){
+	vector<Sedinte> sedinte;
+	Angajat angajatLogat;
+
+	TipuriMeniu meniuCurent = TipuriMeniuri::MeniuLogare;	
+	Meniu meniu;
+	Sedinta sedinta;
+
+	while (true){
+		switch(meniuCurent)
+		{
+			case MeniuLogare:
+				meniu = new MeniuLogare(angajatLogat, sedinte);
+			break;
+			case MeniuRegister:
+				meniu = new MeniuRegister(angajatLogat, sedinte);
+			break;
+			case MeniuSedinte:
+				meniu = new MeniuSedinte(angajatLogat, sedinte);
+			break;
+			case MeniuInformatiiCont:
+				meniu = new MeniuInformatiiCont(angajatLogat, sedinte);
+			break;
+			case MeniuAngajat:
+				meniu = new MeniuAngajat(angajatLogat, sedinte);
+			break;
+			case MeniuManager:
+				meniu = new MeniuManager(angajatLogat, sedinte);
+			break;
+			case Meniu gestionare sedinta:
+				meniu = new MeniuGestionareSedinta(angajatLogat, sedinta);
+			break;
+		}
+		
+		meniu.afisare();
+		// In afisare are loc logica specifica fiecarui meniu prin polimorfism
+		// iar tot in afisare pe langa logica, se va seta si urmatorul meniu
+		// in functie de ce optiuni alege userul
+
+		meniuCurent = meniu.getUrmatorulMeniu();
+		// Se seteaza urmatorul meniu, iar dupa se distruge meniul curent 
+		// pentru a fii creat urmatorul
+
+		if (meniuCurent == TipuriMeniu.MeniuVizualizareSedintra)
+			sedinta = dynamic_cast<MeniuSedinte*>(meniu)->getSedinta();
+	}
+}
