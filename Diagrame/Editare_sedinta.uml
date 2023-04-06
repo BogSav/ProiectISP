@@ -66,6 +66,6 @@
     <node xmi:type="uml:OpaqueAction" xmi:id="_3mW7kNPUEe2DpuaRRVKwPg" name="Stergere participanti selectati" incoming="_-nk7kNPUEe2DpuaRRVKwPg" outgoing="_XorBgNPVEe2DpuaRRVKwPg" inPartition="_Oe-18NPREe2DpuaRRVKwPg"/>
     <node xmi:type="uml:DecisionNode" xmi:id="_q7eu8NPVEe2DpuaRRVKwPg" name="Au fost date editate?" incoming="_tgykUNPVEe2DpuaRRVKwPg" outgoing="_T19IYNPWEe2DpuaRRVKwPg _gYgqANPWEe2DpuaRRVKwPg" inPartition="_Oe-18NPREe2DpuaRRVKwPg"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_b9yyMNPWEe2DpuaRRVKwPg" name="Notificare participanti cu datele actualizate" incoming="_gYgqANPWEe2DpuaRRVKwPg" outgoing="_3ydroNPZEe2DpuaRRVKwPg" inPartition="_9HopQNPIEe2DpuaRRVKwPg"/>
-    <node xmi:type="uml:ActivityFinalNode" xmi:id="_yk3lYNPZEe2DpuaRRVKwPg" name="Meniu principal" incoming="_3ydroNPZEe2DpuaRRVKwPg" inPartition="_9HopQNPIEe2DpuaRRVKwPg"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_yk3lYNPZEe2DpuaRRVKwPg" name="Meniu principal(finish)" incoming="_3ydroNPZEe2DpuaRRVKwPg" inPartition="_9HopQNPIEe2DpuaRRVKwPg"/>
   </packagedElement>
 </uml:Model>
