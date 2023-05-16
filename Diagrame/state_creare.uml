@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ew0xENSzEe2V-7wxdI0LhQ" name="state_creare">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_exk_ANSzEe2V-7wxdI0LhQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_exFPwNSzEe2V-7wxdI0LhQ" name="Creare Sedinta">
+    <region xmi:type="uml:Region" xmi:id="_exJhMNSzEe2V-7wxdI0LhQ" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_sM_wYNS1Ee2V-7wxdI0LhQ" guard="_vLfh0NS1Ee2V-7wxdI0LhQ" source="_-fyAsNS0Ee2V-7wxdI0LhQ" target="_VvC8oNS1Ee2V-7wxdI0LhQ">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_vLfh0NS1Ee2V-7wxdI0LhQ" name="data angajat corecte"/>
+        <effect xmi:type="uml:Activity" xmi:id="_9yGl4NS1Ee2V-7wxdI0LhQ" name="Introducere date angajat"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_V1wzMNS2Ee2V-7wxdI0LhQ" name="Logout" source="_VvC8oNS1Ee2V-7wxdI0LhQ" target="_cOHR0NS1Ee2V-7wxdI0LhQ">
+        <effect xmi:type="uml:Activity" xmi:id="_Y2gAUNS2Ee2V-7wxdI0LhQ" name="Uitare detalii cont angajat"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_tzmFUNS2Ee2V-7wxdI0LhQ" name="Cerere noua sedinta" guard="_x0croNS2Ee2V-7wxdI0LhQ" source="_VvC8oNS1Ee2V-7wxdI0LhQ" target="_jmRVsNS2Ee2V-7wxdI0LhQ">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_x0croNS2Ee2V-7wxdI0LhQ" name="Angajatul este Manager"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_mG97YNS3Ee2V-7wxdI0LhQ" source="_jmRVsNS2Ee2V-7wxdI0LhQ" target="_KHQIMNS3Ee2V-7wxdI0LhQ">
+        <effect xmi:type="uml:Activity" xmi:id="_u_IO4NS3Ee2V-7wxdI0LhQ" name="Completare campuri"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_PT3hkNS4Ee2V-7wxdI0LhQ" guard="_ZL9BANS4Ee2V-7wxdI0LhQ" source="_KHQIMNS3Ee2V-7wxdI0LhQ" target="_5UECYNS3Ee2V-7wxdI0LhQ">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_ZL9BANS4Ee2V-7wxdI0LhQ" name="Verificare zone obligatorii necompletate"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_7vKWYNS4Ee2V-7wxdI0LhQ" guard="_-ypVgNS4Ee2V-7wxdI0LhQ" source="_5UECYNS3Ee2V-7wxdI0LhQ" target="_uO8SoNS4Ee2V-7wxdI0LhQ">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_-ypVgNS4Ee2V-7wxdI0LhQ" name="toate datele sunt valide"/>
+        <effect xmi:type="uml:Activity" xmi:id="_Cj2WQNS5Ee2V-7wxdI0LhQ" name="Sedinta creata"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_X_W1kNS5Ee2V-7wxdI0LhQ" source="_uO8SoNS4Ee2V-7wxdI0LhQ" target="_VvC8oNS1Ee2V-7wxdI0LhQ">
+        <effect xmi:type="uml:Activity" xmi:id="_f3DxoNS5Ee2V-7wxdI0LhQ" name="Sedinta apare in notification center"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="__WPVUNS5Ee2V-7wxdI0LhQ" name="Modificare date sedinta" guard="_IAtyINS6Ee2V-7wxdI0LhQ" source="_VvC8oNS1Ee2V-7wxdI0LhQ" target="_8lUF0NS5Ee2V-7wxdI0LhQ">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_IAtyINS6Ee2V-7wxdI0LhQ" name="Angajatul este Manager"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_IkqXQNS7Ee2V-7wxdI0LhQ" source="_8lUF0NS5Ee2V-7wxdI0LhQ" target="_kbX04NS6Ee2V-7wxdI0LhQ">
+        <effect xmi:type="uml:Activity" xmi:id="_KJBtANS7Ee2V-7wxdI0LhQ" name="Completare campuri"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_LsS2kNS7Ee2V-7wxdI0LhQ" guard="_PvWcUNS7Ee2V-7wxdI0LhQ" source="_kbX04NS6Ee2V-7wxdI0LhQ" target="_A_hx4NS7Ee2V-7wxdI0LhQ">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_PvWcUNS7Ee2V-7wxdI0LhQ" name="Verificare zone obligatorii necompletate"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_RFMN4NS7Ee2V-7wxdI0LhQ" name="Schimbarea numarului de persoane" source="_A_hx4NS7Ee2V-7wxdI0LhQ" target="_1i-PANS6Ee2V-7wxdI0LhQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_YEoFMNS7Ee2V-7wxdI0LhQ" name="Schimbarea detaliilor sedintei" source="_1i-PANS6Ee2V-7wxdI0LhQ" target="_5UECYNS3Ee2V-7wxdI0LhQ"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_-fyAsNS0Ee2V-7wxdI0LhQ" name="Login"/>
+      <subvertex xmi:type="uml:State" xmi:id="_VvC8oNS1Ee2V-7wxdI0LhQ" name="Afisare meniu &amp; notificari"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_cOHR0NS1Ee2V-7wxdI0LhQ" name="Logout"/>
+      <subvertex xmi:type="uml:State" xmi:id="_jmRVsNS2Ee2V-7wxdI0LhQ" name="Creare sedinta"/>
+      <subvertex xmi:type="uml:State" xmi:id="_KHQIMNS3Ee2V-7wxdI0LhQ" name="Introducere detalii sedinta noua">
+        <doActivity xmi:type="uml:Activity" xmi:id="_R2BxwNS3Ee2V-7wxdI0LhQ" name="Selectare Titlu, Descriere, Data, Ora, Participanti"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_5UECYNS3Ee2V-7wxdI0LhQ" name="Verificarea validitatii datelor">
+        <doActivity xmi:type="uml:Activity" xmi:id="_LW-OMNS4Ee2V-7wxdI0LhQ" name="Potrivire tip date conform programului de lucru"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_uO8SoNS4Ee2V-7wxdI0LhQ" name="Notificare">
+        <doActivity xmi:type="uml:Activity" xmi:id="_zx-dYNS4Ee2V-7wxdI0LhQ" name="Trimitere email cu detalii noua sedinta catre toti participantii adaugati"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_8lUF0NS5Ee2V-7wxdI0LhQ" name="Editare sedinta"/>
+      <subvertex xmi:type="uml:State" xmi:id="_kbX04NS6Ee2V-7wxdI0LhQ" name="Introducere detalii editate">
+        <doActivity xmi:type="uml:Activity" xmi:id="_yIP0kNS6Ee2V-7wxdI0LhQ" name="Completare nou titlu, descriere, data, ora"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_1i-PANS6Ee2V-7wxdI0LhQ" name="Alegere sala">
+        <doActivity xmi:type="uml:Activity" xmi:id="__N1x0NS6Ee2V-7wxdI0LhQ" name="Verificare disponibilitate"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_A_hx4NS7Ee2V-7wxdI0LhQ" name="Adaugare sau Eliminare participanti"/>
+    </region>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_e-5sgNS3Ee2V-7wxdI0LhQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_e-8v0NS3Ee2V-7wxdI0LhQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
