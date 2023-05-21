@@ -25,4 +25,5 @@ public class BazaDeDate {
 	 * 
 	 */
 	protected Angajat[] angajat = new Angajat[100];
+	
 }

@@ -32,6 +32,27 @@ public class Sedinta {
 	 * 
 	 */
 	private String descriere;
+	public void setTitlu(String titlu) {
+		this.titlu = titlu;
+	}
+
+	public void setDescriere(String descriere) {
+		this.descriere = descriere;
+	}
+
+	public void setData(String data) {
+		this.data = data;
+	}
+
+	public void setOra(String ora) {
+		this.ora = ora;
+	}
+
+	public void setSala(String sala) {
+		this.sala = sala;
+	}
+
+
 	/**
 	 * 
 	 */

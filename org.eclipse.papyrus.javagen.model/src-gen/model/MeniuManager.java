@@ -12,7 +12,7 @@ public class MeniuManager extends MeniuAngajat {
 	/**
 	 * 
 	 */
-	private int idSedintaSelctata;
+	private int idSedintaSelectata;
 
 	/**
 	 * 
@@ -29,9 +29,9 @@ public class MeniuManager extends MeniuAngajat {
 	/**
 	 * 
 	 */
-	private void inregistrareAngajatNou() {
+	private void inregistrareAngajatNou(Angajat a) {
+		angajat[nrAngajati++] = a;
 	}
-
 	/**
 	 * 
 	 * @param titlu 
@@ -41,6 +41,11 @@ public class MeniuManager extends MeniuAngajat {
 	 * @param sala 
 	 */
 	public void editareSedinta(String titlu, String descriere, String data, String ora, String sala) {
+		sedinta[idSedintaSelectata].setTitlu(titlu);
+		sedinta[idSedintaSelectata].setDescriere(descriere);
+		sedinta[idSedintaSelectata].setData(data);
+		sedinta[idSedintaSelectata].setOra(ora);
+		sedinta[idSedintaSelectata].setSala(sala);
 	}
 
 	/**
@@ -48,5 +53,6 @@ public class MeniuManager extends MeniuAngajat {
 	 * @param idSedintaSelectata 
 	 */
 	public void selectareSedinta(int idSedintaSelectata) {
+		this.idSedintaSelectata = idSedintaSelectata;
 	}
 }
