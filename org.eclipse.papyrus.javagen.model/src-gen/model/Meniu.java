@@ -8,7 +8,7 @@ package model;
 /**
  * 
  */
-public class Meniu implements BazaDeDate {
+public class Meniu {
 	/**
 	 * 
 	 */

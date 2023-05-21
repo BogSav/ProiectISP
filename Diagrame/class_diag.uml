@@ -30,7 +30,6 @@
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_-Rk3cMuyEe2COtMR7zNjHg" name="urmatorulMeniu" type="_LDWWQMuyEe2COtMR7zNjHg"/>
-      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_8xs4QPQDEe2u1qjcLFefsw" client="_frim4MsxEe2COtMR7zNjHg" supplier="_9U8PkPQAEe2u1qjcLFefsw" contract="_9U8PkPQAEe2u1qjcLFefsw"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_sd3iEMuuEe2COtMR7zNjHg" name="afisare" isAbstract="true"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_w60OgMuuEe2COtMR7zNjHg" name="afisareOptiuni" visibility="private"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_CSTh8MuzEe2COtMR7zNjHg" name="getUrmatorulMeniu"/>
@@ -192,31 +191,31 @@
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
-    <packagedElement xmi:type="uml:Interface" xmi:id="_9U8PkPQAEe2u1qjcLFefsw" name="BazaDeDate">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_L2MSgPQBEe2u1qjcLFefsw" name="nrAngajati" visibility="protected">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_OwZZ0PQBEe2u1qjcLFefsw" name="nrSedinte" visibility="protected">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_79aKAPQCEe2u1qjcLFefsw" name="angajat" visibility="private" type="_79Ke4MswEe2COtMR7zNjHg" association="_79WfoPQCEe2u1qjcLFefsw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_79axEfQCEe2u1qjcLFefsw" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_TOK6wvQDEe2u1qjcLFefsw" name="sedinta" visibility="private" type="_pLsugMsxEe2COtMR7zNjHg" association="_TOKTsPQDEe2u1qjcLFefsw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOLh0PQDEe2u1qjcLFefsw" value="*"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_79WfoPQCEe2u1qjcLFefsw" memberEnd="_79aKAPQCEe2u1qjcLFefsw _79bYIPQCEe2u1qjcLFefsw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_79Y74PQCEe2u1qjcLFefsw" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_79Zi8PQCEe2u1qjcLFefsw" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_79bYIPQCEe2u1qjcLFefsw" name="bazadedate" visibility="private" type="_9U8PkPQAEe2u1qjcLFefsw" association="_79WfoPQCEe2u1qjcLFefsw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_79bYIPQCEe2u1qjcLFefsw" name="bazadedate" visibility="private" type="_PGgIAPe3Ee2xd8euFjoqQQ" association="_79WfoPQCEe2u1qjcLFefsw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_TOKTsPQDEe2u1qjcLFefsw" memberEnd="_TOK6wvQDEe2u1qjcLFefsw _TOLh0fQDEe2u1qjcLFefsw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TOK6wPQDEe2u1qjcLFefsw" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TOK6wfQDEe2u1qjcLFefsw" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_TOLh0fQDEe2u1qjcLFefsw" name="bazadedate" visibility="private" type="_9U8PkPQAEe2u1qjcLFefsw" association="_TOKTsPQDEe2u1qjcLFefsw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_TOLh0fQDEe2u1qjcLFefsw" name="bazadedate" visibility="private" type="_PGgIAPe3Ee2xd8euFjoqQQ" association="_TOKTsPQDEe2u1qjcLFefsw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PGgIAPe3Ee2xd8euFjoqQQ" name="BazaDeDate">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_SpKWcPe3Ee2xd8euFjoqQQ" name="nrSedinte" visibility="protected">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_sqiNoPe3Ee2xd8euFjoqQQ" name="nrAngajati" visibility="protected">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_TOK6wvQDEe2u1qjcLFefsw" name="sedinta" visibility="private" type="_pLsugMsxEe2COtMR7zNjHg" association="_TOKTsPQDEe2u1qjcLFefsw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOLh0PQDEe2u1qjcLFefsw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_79aKAPQCEe2u1qjcLFefsw" name="angajat" visibility="private" type="_79Ke4MswEe2COtMR7zNjHg" association="_79WfoPQCEe2u1qjcLFefsw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_79axEfQCEe2u1qjcLFefsw" value="*"/>
+      </ownedAttribute>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SOFt0MsyEe2COtMR7zNjHg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SOL0cMsyEe2COtMR7zNjHg" source="http://www.eclipse.org/uml2/2.0.0/UML">

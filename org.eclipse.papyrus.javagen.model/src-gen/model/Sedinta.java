@@ -4,7 +4,7 @@
 
 package model;
 
-import java.util.Map;
+import std.map;
 
 /************************************************************/
 /**
@@ -42,7 +42,7 @@ public class Sedinta {
 	/**
 	 * 
 	 */
-	private Map propuneriDataOra;
+	private map propuneriDataOra;
 	/**
 	 * 
 	 */
