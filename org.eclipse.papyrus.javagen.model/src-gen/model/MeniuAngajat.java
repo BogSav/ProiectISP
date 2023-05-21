@@ -13,23 +13,27 @@ public class MeniuAngajat extends Meniu {
 	 * 
 	 */
 	public void afisare() {
+		this.afisareOptiuni();
 	}
 
 	/**
 	 * 
 	 */
 	private void afisareNotificari() {
+		
 	}
 
 	/**
 	 * 
 	 */
 	private void afisareOptiuni() {
+		System.out.println("schimbareParola");
 	}
 
 	/**
 	 * 
 	 */
-	private void schimbareParola() {
+	private void schimbareParola(String parola) {
+		angajat[this.idAngajatLogat].setParola(parola);
 	}
 }

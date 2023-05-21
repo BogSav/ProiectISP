@@ -18,12 +18,17 @@ public class MeniuManager extends MeniuAngajat {
 	 * 
 	 */
 	private void afisareOptiuni() {
+		System.out.println("selectareSedinta");
+		System.out.println("editareSedinta");
+		System.out.println("inregistrareAngajatNou");
+		System.out.println("afisare");
 	}
 
 	/**
 	 * 
 	 */
 	public void afisare() {
+		this.afisareOptiuni();
 	}
 
 	/**

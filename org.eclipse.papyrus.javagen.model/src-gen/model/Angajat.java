@@ -26,6 +26,10 @@ public class Angajat {
 	 * 
 	 */
 	private String nume;
+	public void setParola(String parola) {
+		this.parola = parola;
+	}
+
 	/**
 	 * 
 	 */
@@ -34,6 +38,14 @@ public class Angajat {
 	 * 
 	 */
 	private String username;
+	public String getUsername() {
+		return username;
+	}
+
+	public String getParola() {
+		return parola;
+	}
+
 	/**
 	 * 
 	 */

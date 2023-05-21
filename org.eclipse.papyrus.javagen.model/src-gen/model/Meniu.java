@@ -12,7 +12,7 @@ public class Meniu extends BazaDeDate {
 	/**
 	 * 
 	 */
-	private int idAngajatLogat;
+	protected int idAngajatLogat = -1;
 	/**
 	 * 
 	 */

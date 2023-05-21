@@ -13,17 +13,23 @@ public class MeniuLogare extends Meniu {
 	 * 
 	 */
 	public void afisare() {
+		this.afisareOptiuni();
 	}
 
 	/**
 	 * 
 	 */
-	private void logare() {
+	private void logare(String username, String parola) {
+		for(int i = 0; i < nrAngajati; i++) {
+			if(angajat[i].getUsername() == username && angajat[i].getParola() == parola)
+				this.idAngajatLogat = i;
+		}
 	}
 
 	/**
 	 * 
 	 */
 	private void afisareOptiuni() {
+		System.out.println("logare");
 	}
 }

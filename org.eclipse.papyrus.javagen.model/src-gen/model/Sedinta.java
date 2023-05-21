@@ -4,7 +4,6 @@
 
 package model;
 
-import java.util.Map;
 
 
 /************************************************************/
@@ -50,6 +49,11 @@ public class Sedinta {
 
 	public void setSala(String sala) {
 		this.sala = sala;
+	}
+
+
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 
@@ -101,6 +105,12 @@ public class Sedinta {
 	 * 
 	 */
 	public void afisare() {
+		System.out.println(titlu);
+		System.out.println(descriere);
+		System.out.println("Data: " + data + " ora: ");
+		System.out.println("Sala: " + sala);
+		System.out.println("Status: " + status);
+		System.out.print("");
 	}
 
 	/**
@@ -110,8 +120,13 @@ public class Sedinta {
 	}
 
 	/**
+	 * @return 
 	 * 
 	 */
-	public void isPending() {
+	public boolean isPending() {
+		if(this.status == "pending")
+			return true;
+		else
+			return false;
 	}
 }
