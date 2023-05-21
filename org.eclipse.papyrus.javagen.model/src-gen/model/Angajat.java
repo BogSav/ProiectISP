@@ -12,6 +12,15 @@ public class Angajat {
 	/**
 	 * 
 	 */
+	public Angajat(boolean isManager, String nume, String prenume, String username, String parola, int idAngajat) {
+		this.isManager = isManager;
+		this.nume = nume;
+		this.prenume = prenume;
+		this.username = username;
+		this.parola = parola;
+		this.idAngajat = idAngajat;
+	}
+	
 	private boolean isManager;
 	/**
 	 * 
@@ -35,8 +44,10 @@ public class Angajat {
 	private int idAngajat;
 
 	/**
+	 * @return 
 	 * 
 	 */
-	public void isManager() {
+	public boolean isManager() {
+		return this.isManager;
 	}
 }

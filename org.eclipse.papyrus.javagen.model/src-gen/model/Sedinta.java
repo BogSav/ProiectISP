@@ -4,7 +4,8 @@
 
 package model;
 
-import std.map;
+import java.util.Map;
+
 
 /************************************************************/
 /**
@@ -14,6 +15,18 @@ public class Sedinta {
 	/**
 	 * 
 	 */
+	public Sedinta(String titlu, String descriere, String data, String ora, String manager, int idSedinta, String status, String sala) {
+		this.titlu = titlu;
+		this.descriere = descriere;
+		this.data = data;
+		this.ora = ora;
+		this.manager = manager;
+		this.idSedinta = idSedinta;
+		this.status = status;
+		this.sala = sala;
+	}
+	
+	
 	private String titlu;
 	/**
 	 * 
@@ -42,7 +55,18 @@ public class Sedinta {
 	/**
 	 * 
 	 */
-	private map propuneriDataOra;
+	private static int nrPropuneri;
+	
+	public void propunereNoua(String dataNoua, String oraNoua) {
+		propuneriData[nrPropuneri] = dataNoua;
+		propuneriOra[nrPropuneri] = oraNoua;
+		nrPropuneri++;
+	}
+	
+	private String[] propuneriData = new String[100];
+	
+	private String[] propuneriOra = new String[100];
+	
 	/**
 	 * 
 	 */
@@ -50,7 +74,7 @@ public class Sedinta {
 	/**
 	 * 
 	 */
-	private Angajat[] angajat;
+	private Angajat[] angajat = new Angajat[100];
 
 	/**
 	 * 

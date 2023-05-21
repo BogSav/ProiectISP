@@ -12,17 +12,17 @@ public class BazaDeDate {
 	/**
 	 * 
 	 */
-	protected static int nrSedinte;
+	protected static int nrSedinte = 0;
 	/**
 	 * 
 	 */
-	protected static int nrAngajati;
+	protected static int nrAngajati = 0;
 	/**
 	 * 
 	 */
-	private Sedinta[] sedinta;
+	protected Sedinta[] sedinta = new Sedinta[100];
 	/**
 	 * 
 	 */
-	private Angajat[] angajat;
+	protected Angajat[] angajat = new Angajat[100];
 }
