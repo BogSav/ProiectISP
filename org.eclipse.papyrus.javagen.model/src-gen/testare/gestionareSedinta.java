@@ -20,12 +20,12 @@ class gestionareSedinta {
 		MeniuGestionareSedinta mgs = new MeniuGestionareSedinta();
 		Sedinta s1 = new Sedinta("NXP Cup", "Discutie despre organizarea", "18-05-2023", "16:00", "Popescu", 0, "C310");
 		
-		mgs.SelectareSedinta(s1.getIdSedinta()); //angajatul selecteaza getSedinte() s din meniul gestionare getSedinte()
+		mgs.selectareSedinta(s1.getIdSedinta()); // angajatul selecteaza sedinta din meniul gestionare getIdSedinte()
 		
-		assertTrue(mgs.getSedinte()[mgs.getIdSedintaSelectata()].isPending()); //verificam ca getSedinte() nu este inca acceptata sau refuzata
+		assertTrue(mgs.getSedinte()[mgs.getIdSedintaSelectata()].isPending()); //verificam ca sedinta nu este inca acceptata sau refuzata
 		
-		mgs.acceptareSedinta("accepted"); // angajatul accepta getSedinte() selectata din meniul gestionare getSedinte()
-		assertFalse(mgs.getSedinte()[mgs.getIdSedintaSelectata()].isPending()); // verific daca acceptarea sedintei a functionat, adica getSedinte() nu mai este in pending
+		mgs.acceptareSedinta("accepted"); // angajatul accepta sedinta selectata din meniul gestionare sedinte
+		assertFalse(mgs.getSedinte()[mgs.getIdSedintaSelectata()].isPending()); // verific daca acceptarea sedintei a functionat, adica sedinta nu mai este in pending
 		
 	}
 	
@@ -39,11 +39,11 @@ class gestionareSedinta {
 		MeniuGestionareSedinta mgs = new MeniuGestionareSedinta();
 		Sedinta s1 = new Sedinta("NXP Cup", "Discutie despre organizarea", "18-05-2023", "16:00", "Popescu", 0, "C310");
 		
-		mgs.SelectareSedinta(s1.getIdSedinta()); //angajatul selecteaza getSedinte() s din meniul gestionare getSedinte()
+		mgs.selectareSedinta(s1.getIdSedinta()); // angajatul selecteaza sedinta din meniul gestionare getIdSedinte()
 		
-		assertTrue(mgs.getSedinte()[mgs.getIdSedintaSelectata()].isPending()); //verificam ca getSedinte() nu este inca acceptata sau refuzata
+		assertTrue(mgs.getSedinte()[mgs.getIdSedintaSelectata()].isPending()); //verificam ca sedinta nu este inca acceptata sau refuzata
 		
-		mgs.acceptareSedinta("declined"); // angajatul refuza getSedinte() selectata din meniul gestionare getSedinte()
+		mgs.acceptareSedinta("declined"); // angajatul refuza sedinta selectata din meniul gestionare sedinte
 		assertFalse(mgs.getSedinte()[mgs.getIdSedintaSelectata()].isPending());
 		
 		String dataPropusa = "22-05-2023";
@@ -51,7 +51,7 @@ class gestionareSedinta {
 		
 		Sedinta s2 = new Sedinta("NXP Cup", "Discutie despre organizarea", dataPropusa, oraPropusa, "Popescu", 0, "C310");
 		
-		assertTrue(mgs.validareSedinta(s2)); //verificam ca data si ora propusa sunt valide
+		assertTrue(mgs.validareSedinta(s2)); // verificam ca data si ora propusa sunt valide
 		
 		mgs.alegereDataOraNoua(dataPropusa, oraPropusa); // salvam propunerile in noile detalii ale sedintei
 		
@@ -67,11 +67,11 @@ class gestionareSedinta {
 		MeniuGestionareSedinta mgs = new MeniuGestionareSedinta();
 		Sedinta s1 = new Sedinta("NXP Cup", "Discutie despre organizarea", "18-05-2023", "16:00", "Popescu", 0, "C310");
 		
-		mgs.SelectareSedinta(s1.getIdSedinta()); //angajatul selecteaza getSedinte() s din meniul gestionare getSedinte()
+		mgs.selectareSedinta(s1.getIdSedinta()); // angajatul selecteaza sedinta din meniul gestionare sedinte
 		
-		assertTrue(mgs.getSedinte()[mgs.getIdSedintaSelectata()].isPending()); //verificam ca getSedinte() nu este inca acceptata sau refuzata
+		assertTrue(mgs.getSedinte()[mgs.getIdSedintaSelectata()].isPending()); //verificam ca sedinta nu este inca acceptata sau refuzata
 		
-		mgs.acceptareSedinta("declined"); // angajatul refuza getSedinte() selectata din meniul gestionare getSedinte()
+		mgs.acceptareSedinta("declined"); // angajatul refuza sedinta selectata din meniul gestionare sedinte
 		assertFalse(mgs.getSedinte()[mgs.getIdSedintaSelectata()].isPending());
 		
 		String dataPropusa = "21-05-2023"; //data este invalida (in weekend)
@@ -90,7 +90,7 @@ class gestionareSedinta {
 		Angajat a = new Angajat(false, "Ionescu", "Andrei", "IAndrei", "1234", 1); //parola este incorecta (vezi baza de date)
 		MeniuLogare ml = new MeniuLogare();
 		ml.logare(a.getUsername(), a.getParola());
-		assertFalse(ml.idAngajatLogat != -1); // verificam ca angajatul este logat corect
+		assertFalse(ml.idAngajatLogat != -1); // verificam daca angajatul este logat corect
 	}
 	
 	@Test
@@ -103,9 +103,9 @@ class gestionareSedinta {
 		MeniuGestionareSedinta mgs = new MeniuGestionareSedinta();
 		Sedinta s1 = new Sedinta("NXP Cup", "Discutie despre organizarea", "18-05-2023", "16:00", "Popescu", 0, "C310");
 		
-		mgs.SelectareSedinta(s1.getIdSedinta()); //angajatul selecteaza getSedinte() s din meniul gestionare getSedinte()
-		mgs.getSedinte()[mgs.getIdSedintaSelectata()].setStatus("accepted"); //getSedinte() este acceptata
-		assertFalse(mgs.getSedinte()[mgs.getIdSedintaSelectata()].isPending()); //verificam ca getSedinte() nu este inca acceptata sau refuzata (aici este deja)
+		mgs.selectareSedinta(s1.getIdSedinta()); // angajatul selecteaza sedinta din meniul gestionare sedinte
+		mgs.getSedinte()[mgs.getIdSedintaSelectata()].setStatus("accepted"); // sedinta este acceptata
+		assertFalse(mgs.getSedinte()[mgs.getIdSedintaSelectata()].isPending()); //verificam ca sedinta nu este inca acceptata sau refuzata (aici este deja)
 		
 	}
 	
@@ -119,9 +119,9 @@ class gestionareSedinta {
 		MeniuGestionareSedinta mgs1 = new MeniuGestionareSedinta();
 		Sedinta s1 = new Sedinta("NXP Cup", "Discutie despre organizarea", "18-05-2023", "16:00", "Popescu", 0, "C310");
 		
-		mgs1.SelectareSedinta(s1.getIdSedinta()); //angajatul selecteaza getSedinte() s din meniul gestionare getSedinte()
-		mgs1.getSedinte()[mgs1.getIdSedintaSelectata()].setStatus("declined"); //getSedinte() este acceptata
-		assertFalse(mgs1.getSedinte()[mgs1.getIdSedintaSelectata()].isPending()); //verificam ca getSedinte() nu este inca acceptata sau refuzata (aici este deja)
+		mgs1.selectareSedinta(s1.getIdSedinta()); // angajatul selecteaza sedinta din meniul gestionare sedinte
+		mgs1.getSedinte()[mgs1.getIdSedintaSelectata()].setStatus("declined"); // sedinta este refuzata
+		assertFalse(mgs1.getSedinte()[mgs1.getIdSedintaSelectata()].isPending()); //verificam ca sedinta nu este inca acceptata sau refuzata (aici este deja)
 		
 	}
 

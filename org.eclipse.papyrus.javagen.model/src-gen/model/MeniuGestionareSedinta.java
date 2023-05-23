@@ -19,7 +19,7 @@ public class MeniuGestionareSedinta extends Meniu {
 
 	public void afisare() {
 		System.out.println("Date despre sedinta selectata: ");
-		super.getSedintaByID(idSedintaSelectata).afisare();;
+		super.getSedintaByID(idSedintaSelectata).afisare();
 		
 		this.afisareOptiuni();
 	}
@@ -71,7 +71,7 @@ public class MeniuGestionareSedinta extends Meniu {
 		super.sedinte[idSedintaSelectata].setStatus(status);
 	}
 
-	public void SelectareSedinta(int idSedintaSelectata) {
+	public void selectareSedinta(int idSedintaSelectata) {
 		this.idSedintaSelectata = idSedintaSelectata; //modific sedinta selectata de angajat pentru verificare
 	}
 	

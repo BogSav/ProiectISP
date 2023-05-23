@@ -106,7 +106,7 @@ public class Sedinta {
 		angajat[nrAngajati++] = a;
 	}
 
-	// Functiile de afisare normnala si afisare drfept notificare
+	// Functiile de afisare normnala si afisare drept notificare
 	public void afisare() {
 	    System.out.println("---------------------------------------------------");
 	    System.out.println("Titlu Sedinta: " + titlu);
@@ -129,7 +129,7 @@ public class Sedinta {
 		return this.status.toUpperCase().equals("PENDING");
 	}
 	
-	// Verificam daca participantul cu ID-ul respectiv este participant ala sedintei
+	// Verificam daca participantul cu ID-ul respectiv este participant al sedintei
 	public boolean isParticipant(int id) {
 		for(Angajat a : this.angajat) {
 			if(a.getID() == id) {

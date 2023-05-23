@@ -103,7 +103,7 @@ public class Meniu extends BazaDeDate {
         }
     }
 
-    // Setam meniul urmator pe baza alegerii de la atstaura
+    // Setam meniul urmator pe baza alegerii de la tastatura
     private void setUrmatorulMeniu() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Introduceti numarul corespunzator optiunii alese:");
