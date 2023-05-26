@@ -28,6 +28,7 @@ class editareSedinta {
 		
 		meniuManager.selectareSedinta(s.getIdSedinta()); //am selectat sedinta
 		assertTrue(meniuManager.validareSedinta(s));  //am validat schimbarile
+		meniuManager.editareSedinta(s.getTitlu(), s.getDescriere(), s.getData(), s.getOra(), s.getSala()); //am incarcat schimbarile in sistem
 	}
 	
 	@Test
